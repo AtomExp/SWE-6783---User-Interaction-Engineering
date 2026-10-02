@@ -13,10 +13,10 @@ The game includes two difficulty levels:
 
 ## Team
 
-- **Kavya Kondeti** - 
-- **Allen Kim** – 
-- **Patrick Li** – 
-- **Yasoda Kuchampudi** – 
+- **Kavya Kondeti**
+- **Allen Kim**
+- **Patrick Li**
+- **Yasoda Kuchampudi**
 
 ## Development Environment
 

@@ -1,0 +1,1692 @@
+fileFormatVersion: 2
+guid: 117dd9ef712044f268f00bb9f7afdb2d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6105734223149786812
+    second: Glossy Select Difficulty Game Banner_0
+  - first:
+      213: 4828781918422528377
+    second: Glossy Select Difficulty Game Banner_1
+  - first:
+      213: 6755076076654915347
+    second: Glossy Select Difficulty Game Banner_2
+  - first:
+      213: 5997688467265657404
+    second: Glossy Select Difficulty Game Banner_3
+  - first:
+      213: -5216435853597035280
+    second: Glossy Select Difficulty Game Banner_4
+  - first:
+      213: 3301626626865372892
+    second: Glossy Select Difficulty Game Banner_5
+  - first:
+      213: 7031955859651641881
+    second: Glossy Select Difficulty Game Banner_6
+  - first:
+      213: 2966966363473916305
+    second: Glossy Select Difficulty Game Banner_7
+  - first:
+      213: -407581418150408201
+    second: Glossy Select Difficulty Game Banner_8
+  - first:
+      213: -397804831377003231
+    second: Glossy Select Difficulty Game Banner_9
+  - first:
+      213: -7744236725689699682
+    second: Glossy Select Difficulty Game Banner_10
+  - first:
+      213: -6455173543046749897
+    second: Glossy Select Difficulty Game Banner_11
+  - first:
+      213: -6756517501986777084
+    second: Glossy Select Difficulty Game Banner_12
+  - first:
+      213: 1457635904451729412
+    second: Glossy Select Difficulty Game Banner_13
+  - first:
+      213: -7311755436588958547
+    second: Glossy Select Difficulty Game Banner_14
+  - first:
+      213: -653379830976630878
+    second: Glossy Select Difficulty Game Banner_15
+  - first:
+      213: 6070196657640695204
+    second: Glossy Select Difficulty Game Banner_16
+  - first:
+      213: -7797735802193242567
+    second: Glossy Select Difficulty Game Banner_17
+  - first:
+      213: 4982987941098634371
+    second: Glossy Select Difficulty Game Banner_18
+  - first:
+      213: -2370282492966282040
+    second: Glossy Select Difficulty Game Banner_19
+  - first:
+      213: -4544829656596559308
+    second: Glossy Select Difficulty Game Banner_20
+  - first:
+      213: -4642215877032487395
+    second: Glossy Select Difficulty Game Banner_21
+  - first:
+      213: -8012484840340370868
+    second: Glossy Select Difficulty Game Banner_22
+  - first:
+      213: -2528758757643839259
+    second: Glossy Select Difficulty Game Banner_23
+  - first:
+      213: 5950652209013128967
+    second: Glossy Select Difficulty Game Banner_24
+  - first:
+      213: 8868776865614839710
+    second: Glossy Select Difficulty Game Banner_25
+  - first:
+      213: 6977852377736284452
+    second: Glossy Select Difficulty Game Banner_26
+  - first:
+      213: 2175399757933615562
+    second: Glossy Select Difficulty Game Banner_27
+  - first:
+      213: -2065855770027238776
+    second: Glossy Select Difficulty Game Banner_28
+  - first:
+      213: 7330106511410111814
+    second: Glossy Select Difficulty Game Banner_29
+  - first:
+      213: 301589865890068349
+    second: Glossy Select Difficulty Game Banner_30
+  - first:
+      213: 1520819722924165248
+    second: Glossy Select Difficulty Game Banner_31
+  - first:
+      213: 8238392396621646105
+    second: Glossy Select Difficulty Game Banner_32
+  - first:
+      213: -1979129448713496413
+    second: Glossy Select Difficulty Game Banner_33
+  - first:
+      213: 3427478761702607388
+    second: Glossy Select Difficulty Game Banner_34
+  - first:
+      213: 4044227694335164407
+    second: Glossy Select Difficulty Game Banner_35
+  - first:
+      213: -6360374039488033706
+    second: Glossy Select Difficulty Game Banner_36
+  - first:
+      213: 5160762892988869312
+    second: Glossy Select Difficulty Game Banner_37
+  - first:
+      213: -3984791380746972176
+    second: Glossy Select Difficulty Game Banner_38
+  - first:
+      213: -1283944559472554509
+    second: Glossy Select Difficulty Game Banner_39
+  - first:
+      213: -4280952991394563393
+    second: Glossy Select Difficulty Game Banner_40
+  - first:
+      213: -6560221408199099000
+    second: Glossy Select Difficulty Game Banner_41
+  - first:
+      213: 6935755601729364122
+    second: Glossy Select Difficulty Game Banner_42
+  - first:
+      213: 5134889695268834636
+    second: Glossy Select Difficulty Game Banner_43
+  - first:
+      213: 8044867941502366597
+    second: Glossy Select Difficulty Game Banner_44
+  - first:
+      213: -7682532244557725057
+    second: Glossy Select Difficulty Game Banner_45
+  - first:
+      213: 1663552736507316582
+    second: Glossy Select Difficulty Game Banner_46
+  - first:
+      213: -1732347658968247873
+    second: Glossy Select Difficulty Game Banner_47
+  - first:
+      213: -5998999575247725725
+    second: Glossy Select Difficulty Game Banner_48
+  - first:
+      213: 7792018699909981583
+    second: Glossy Select Difficulty Game Banner_49
+  - first:
+      213: -554105460385477123
+    second: Glossy Select Difficulty Game Banner_50
+  - first:
+      213: 1097458835027655303
+    second: Glossy Select Difficulty Game Banner_51
+  - first:
+      213: 6267170559180398107
+    second: Glossy Select Difficulty Game Banner_52
+  - first:
+      213: 7341628435770876339
+    second: Glossy Select Difficulty Game Banner_53
+  - first:
+      213: -2045825817564663231
+    second: Glossy Select Difficulty Game Banner_54
+  - first:
+      213: -6855274303060445385
+    second: Glossy Select Difficulty Game Banner_55
+  - first:
+      213: -7405670935995578503
+    second: Glossy Select Difficulty Game Banner_56
+  - first:
+      213: 1739625689556775320
+    second: Glossy Select Difficulty Game Banner_57
+  - first:
+      213: 4729726205296264180
+    second: Glossy Select Difficulty Game Banner_58
+  - first:
+      213: -6795726191706253707
+    second: Glossy Select Difficulty Game Banner_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 2136
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4491638d213144ba0800000000000000
+      internalID: -6105734223149786812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_1
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 694
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97177612297430340800000000000000
+      internalID: 4828781918422528377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 651
+        width: 27
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f61cbd6e9debd50800000000000000
+      internalID: 6755076076654915347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_3
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 678
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a93d442e11c3350800000000000000
+      internalID: 5997688467265657404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_4
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 652
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4bcb0aa3f7b97b0800000000000000
+      internalID: -5216435853597035280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 635
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde1843acebb1dd20800000000000000
+      internalID: 3301626626865372892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_6
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 641
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91243c2f896869160800000000000000
+      internalID: 7031955859651641881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_7
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 631
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191356b1038cc2920800000000000000
+      internalID: 2966966363473916305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_8
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 629
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff48121cdaf75af0800000000000000
+      internalID: -407581418150408201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_9
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 637
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12de6df0d96ba7af0800000000000000
+      internalID: -397804831377003231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_10
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 630
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e923bbc8ab1f68490800000000000000
+      internalID: -7744236725689699682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_11
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 627
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731e2331ddd9a66a0800000000000000
+      internalID: -6455173543046749897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_12
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 627
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4085e5721270c32a0800000000000000
+      internalID: -6756517501986777084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_13
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 613
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40853b8d1209a3410800000000000000
+      internalID: 1457635904451729412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_14
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 627
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac75957b2d678a90800000000000000
+      internalID: -7311755436588958547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_15
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 613
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afab37618abee6f0800000000000000
+      internalID: -653379830976630878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 619
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5ef67e2bbad3450800000000000000
+      internalID: 6070196657640695204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_17
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 613
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9361de12a90e8c390800000000000000
+      internalID: -7797735802193242567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_18
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 142
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c3d35a121272540800000000000000
+      internalID: 4982987941098634371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_19
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 73
+        width: 89
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccda6581a01b1fd0800000000000000
+      internalID: -2370282492966282040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_20
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 112
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ac6e1c1858de0c0800000000000000
+      internalID: -4544829656596559308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_21
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 78
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16dcce5149839fb0800000000000000
+      internalID: -4642215877032487395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_22
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 104
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a4f4b5d7fedc090800000000000000
+      internalID: -8012484840340370868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_23
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 112
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e81bffce4b08ecd0800000000000000
+      internalID: -2528758757643839259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_24
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 108
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ffe1cf7a6f49250800000000000000
+      internalID: 5950652209013128967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_25
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 108
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fbc2b0299341b70800000000000000
+      internalID: 8868776865614839710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_26
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429061e64cf46d060800000000000000
+      internalID: 6977852377736284452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_27
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 112
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac99a18dd82903e10800000000000000
+      internalID: 2175399757933615562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_28
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ad55e5f1b9453e0800000000000000
+      internalID: -2065855770027238776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_29
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 94
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645a06a1905c9b560800000000000000
+      internalID: 7330106511410111814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_30
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 112
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d773c3892667f2400800000000000000
+      internalID: 301589865890068349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_31
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 110
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0888d48fa790b1510800000000000000
+      internalID: 1520819722924165248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_32
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 114
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91989e06c36a45270800000000000000
+      internalID: 8238392396621646105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_33
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 115
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8dae49048b884e0800000000000000
+      internalID: -1979129448713496413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_34
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 112
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aca7236c9d09f20800000000000000
+      internalID: 3427478761702607388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_35
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 114
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fff4a729abff1830800000000000000
+      internalID: 4044227694335164407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_36
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 96
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c03b182896bb7a0800000000000000
+      internalID: -6360374039488033706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_37
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 88
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca6e9e1286be9740800000000000000
+      internalID: 5160762892988869312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_38
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 96
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3d98ef95d23b8c0800000000000000
+      internalID: -3984791380746972176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_39
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 79
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdc75dc9338e2ee0800000000000000
+      internalID: -1283944559472554509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_40
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 95
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaf7cf8feff694c0800000000000000
+      internalID: -4280952991394563393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_41
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 77
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d3164036965f4a0800000000000000
+      internalID: -6560221408199099000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_42
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 92
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90210af8f0c04060800000000000000
+      internalID: 6935755601729364122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_43
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 96
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d0057d8fac24740800000000000000
+      internalID: 5134889695268834636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_44
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 100
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5833d2ee4cc15af60800000000000000
+      internalID: 8044867941502366597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_45
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 75
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7207ab90a9226590800000000000000
+      internalID: -7682532244557725057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_46
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 71
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669c5a46660261710800000000000000
+      internalID: 1663552736507316582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_47
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 80
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1d7b78bf675f7e0800000000000000
+      internalID: -1732347658968247873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_48
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bd3ad9ba54fbca0800000000000000
+      internalID: -5998999575247725725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_49
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 84
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85e55349bfc22c60800000000000000
+      internalID: 7792018699909981583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_50
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 71
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd8e91050c6f48f0800000000000000
+      internalID: -554105460385477123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_51
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 61
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78aff61fef4fa3f00800000000000000
+      internalID: 1097458835027655303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_52
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 81
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1edbbe2b6679f650800000000000000
+      internalID: 6267170559180398107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_53
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 79
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1a70b2a24b2e560800000000000000
+      internalID: 7341628435770876339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_54
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 63
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1423cb71244cb93e0800000000000000
+      internalID: -2045825817564663231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_55
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 70
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737f738975c2dd0a0800000000000000
+      internalID: -6855274303060445385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_56
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 39
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9778c884585c93990800000000000000
+      internalID: -7405670935995578503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_57
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 45
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891fc240954642810800000000000000
+      internalID: 1739625689556775320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_58
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 39
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f34a8facec53a140800000000000000
+      internalID: 4729726205296264180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Select Difficulty Game Banner_59
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 39
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576d780b80bb0b1a0800000000000000
+      internalID: -6795726191706253707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glossy Select Difficulty Game Banner_0: -6105734223149786812
+      Glossy Select Difficulty Game Banner_1: 4828781918422528377
+      Glossy Select Difficulty Game Banner_10: -7744236725689699682
+      Glossy Select Difficulty Game Banner_11: -6455173543046749897
+      Glossy Select Difficulty Game Banner_12: -6756517501986777084
+      Glossy Select Difficulty Game Banner_13: 1457635904451729412
+      Glossy Select Difficulty Game Banner_14: -7311755436588958547
+      Glossy Select Difficulty Game Banner_15: -653379830976630878
+      Glossy Select Difficulty Game Banner_16: 6070196657640695204
+      Glossy Select Difficulty Game Banner_17: -7797735802193242567
+      Glossy Select Difficulty Game Banner_18: 4982987941098634371
+      Glossy Select Difficulty Game Banner_19: -2370282492966282040
+      Glossy Select Difficulty Game Banner_2: 6755076076654915347
+      Glossy Select Difficulty Game Banner_20: -4544829656596559308
+      Glossy Select Difficulty Game Banner_21: -4642215877032487395
+      Glossy Select Difficulty Game Banner_22: -8012484840340370868
+      Glossy Select Difficulty Game Banner_23: -2528758757643839259
+      Glossy Select Difficulty Game Banner_24: 5950652209013128967
+      Glossy Select Difficulty Game Banner_25: 8868776865614839710
+      Glossy Select Difficulty Game Banner_26: 6977852377736284452
+      Glossy Select Difficulty Game Banner_27: 2175399757933615562
+      Glossy Select Difficulty Game Banner_28: -2065855770027238776
+      Glossy Select Difficulty Game Banner_29: 7330106511410111814
+      Glossy Select Difficulty Game Banner_3: 5997688467265657404
+      Glossy Select Difficulty Game Banner_30: 301589865890068349
+      Glossy Select Difficulty Game Banner_31: 1520819722924165248
+      Glossy Select Difficulty Game Banner_32: 8238392396621646105
+      Glossy Select Difficulty Game Banner_33: -1979129448713496413
+      Glossy Select Difficulty Game Banner_34: 3427478761702607388
+      Glossy Select Difficulty Game Banner_35: 4044227694335164407
+      Glossy Select Difficulty Game Banner_36: -6360374039488033706
+      Glossy Select Difficulty Game Banner_37: 5160762892988869312
+      Glossy Select Difficulty Game Banner_38: -3984791380746972176
+      Glossy Select Difficulty Game Banner_39: -1283944559472554509
+      Glossy Select Difficulty Game Banner_4: -5216435853597035280
+      Glossy Select Difficulty Game Banner_40: -4280952991394563393
+      Glossy Select Difficulty Game Banner_41: -6560221408199099000
+      Glossy Select Difficulty Game Banner_42: 6935755601729364122
+      Glossy Select Difficulty Game Banner_43: 5134889695268834636
+      Glossy Select Difficulty Game Banner_44: 8044867941502366597
+      Glossy Select Difficulty Game Banner_45: -7682532244557725057
+      Glossy Select Difficulty Game Banner_46: 1663552736507316582
+      Glossy Select Difficulty Game Banner_47: -1732347658968247873
+      Glossy Select Difficulty Game Banner_48: -5998999575247725725
+      Glossy Select Difficulty Game Banner_49: 7792018699909981583
+      Glossy Select Difficulty Game Banner_5: 3301626626865372892
+      Glossy Select Difficulty Game Banner_50: -554105460385477123
+      Glossy Select Difficulty Game Banner_51: 1097458835027655303
+      Glossy Select Difficulty Game Banner_52: 6267170559180398107
+      Glossy Select Difficulty Game Banner_53: 7341628435770876339
+      Glossy Select Difficulty Game Banner_54: -2045825817564663231
+      Glossy Select Difficulty Game Banner_55: -6855274303060445385
+      Glossy Select Difficulty Game Banner_56: -7405670935995578503
+      Glossy Select Difficulty Game Banner_57: 1739625689556775320
+      Glossy Select Difficulty Game Banner_58: 4729726205296264180
+      Glossy Select Difficulty Game Banner_59: -6795726191706253707
+      Glossy Select Difficulty Game Banner_6: 7031955859651641881
+      Glossy Select Difficulty Game Banner_7: 2966966363473916305
+      Glossy Select Difficulty Game Banner_8: -407581418150408201
+      Glossy Select Difficulty Game Banner_9: -397804831377003231
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

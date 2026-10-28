@@ -35,3 +35,8 @@ Assets/
 ├── Scripts/
 ├── Sprites/
 └── UI/
+```
+
+## Gameplay Systems
+
+Matching, score/lives/level and the Score Dashboard are documented in [Docs/Gameplay-Systems.md](Docs/Gameplay-Systems.md), including how other screens connect to them.

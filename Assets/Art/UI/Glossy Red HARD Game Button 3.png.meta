@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: dd0de063838b24137a194da2a0e77968
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4290339679198608231
+    second: Glossy Red HARD Game Button 3_0
+  - first:
+      213: 7013246104313823562
+    second: Glossy Red HARD Game Button 3_1
+  - first:
+      213: 8184390292217475342
+    second: Glossy Red HARD Game Button 3_2
+  - first:
+      213: -288452492009882324
+    second: Glossy Red HARD Game Button 3_3
+  - first:
+      213: -4035032285227258634
+    second: Glossy Red HARD Game Button 3_4
+  - first:
+      213: -9216021812982591645
+    second: Glossy Red HARD Game Button 3_5
+  - first:
+      213: 4300088518665180593
+    second: Glossy Red HARD Game Button 3_6
+  - first:
+      213: -1225105996305146481
+    second: Glossy Red HARD Game Button 3_7
+  - first:
+      213: -709098943978169007
+    second: Glossy Red HARD Game Button 3_8
+  - first:
+      213: 7378661748132427142
+    second: Glossy Red HARD Game Button 3_9
+  - first:
+      213: -92032272975296148
+    second: Glossy Red HARD Game Button 3_10
+  - first:
+      213: 607950284237441593
+    second: Glossy Red HARD Game Button 3_11
+  - first:
+      213: -1466363385622541525
+    second: Glossy Red HARD Game Button 3_12
+  - first:
+      213: -3677216767942561694
+    second: Glossy Red HARD Game Button 3_13
+  - first:
+      213: 6008845329552683680
+    second: Glossy Red HARD Game Button 3_14
+  - first:
+      213: 3217444847910136247
+    second: Glossy Red HARD Game Button 3_15
+  - first:
+      213: 7807091573095619363
+    second: Glossy Red HARD Game Button 3_16
+  - first:
+      213: -6418930218920255592
+    second: Glossy Red HARD Game Button 3_17
+  - first:
+      213: 8546732389104832863
+    second: Glossy Red HARD Game Button 3_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 21
+        width: 2082
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b756005395a8b30800000000000000
+      internalID: 4290339679198608231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 671
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4184029c2e045160800000000000000
+      internalID: 7013246104313823562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_2
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 644
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0137c6ab9bc49170800000000000000
+      internalID: 8184390292217475342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 108
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2dbc2f9cf53ffbf0800000000000000
+      internalID: -288452492009882324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_4
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 95
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcebcdd38fa008c0800000000000000
+      internalID: -4035032285227258634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_5
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 114
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fcbea5dfc1a1080800000000000000
+      internalID: -9216021812982591645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_6
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b516c199bbfcab30800000000000000
+      internalID: 4300088518665180593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_7
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 114
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8dd706569c8ffee0800000000000000
+      internalID: -1225105996305146481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 112
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d93957446c826f0800000000000000
+      internalID: -709098943978169007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_9
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 110
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685323f14c5466660800000000000000
+      internalID: 7378661748132427142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_10
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 112
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c698f65a22909bef0800000000000000
+      internalID: -92032272975296148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_11
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 77
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a021dff8fdf6800800000000000000
+      internalID: 607950284237441593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_12
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 96
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b4458154e66abe0800000000000000
+      internalID: -1466363385622541525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_13
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 99
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2607ca015d6e7fcc0800000000000000
+      internalID: -3677216767942561694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_14
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 95
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2b042bdf4b36350800000000000000
+      internalID: 6008845329552683680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_15
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 81
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9281cda09a6ac20800000000000000
+      internalID: 3217444847910136247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_16
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 69
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b5f470c6c585c60800000000000000
+      internalID: 7807091573095619363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_17
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 68
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fdc3f89f06be6a0800000000000000
+      internalID: -6418930218920255592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red HARD Game Button 3_18
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 68
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f515bea43d71c9670800000000000000
+      internalID: 8546732389104832863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glossy Red HARD Game Button 3_0: 4290339679198608231
+      Glossy Red HARD Game Button 3_1: 7013246104313823562
+      Glossy Red HARD Game Button 3_10: -92032272975296148
+      Glossy Red HARD Game Button 3_11: 607950284237441593
+      Glossy Red HARD Game Button 3_12: -1466363385622541525
+      Glossy Red HARD Game Button 3_13: -3677216767942561694
+      Glossy Red HARD Game Button 3_14: 6008845329552683680
+      Glossy Red HARD Game Button 3_15: 3217444847910136247
+      Glossy Red HARD Game Button 3_16: 7807091573095619363
+      Glossy Red HARD Game Button 3_17: -6418930218920255592
+      Glossy Red HARD Game Button 3_18: 8546732389104832863
+      Glossy Red HARD Game Button 3_2: 8184390292217475342
+      Glossy Red HARD Game Button 3_3: -288452492009882324
+      Glossy Red HARD Game Button 3_4: -4035032285227258634
+      Glossy Red HARD Game Button 3_5: -9216021812982591645
+      Glossy Red HARD Game Button 3_6: 4300088518665180593
+      Glossy Red HARD Game Button 3_7: -1225105996305146481
+      Glossy Red HARD Game Button 3_8: -709098943978169007
+      Glossy Red HARD Game Button 3_9: 7378661748132427142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

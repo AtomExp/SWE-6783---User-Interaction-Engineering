@@ -7,4 +7,9 @@ public class DifficultySelectionController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void SelectHardMode()
+    {
+        SceneManager.LoadScene("StudyPhase");
+    }
 }

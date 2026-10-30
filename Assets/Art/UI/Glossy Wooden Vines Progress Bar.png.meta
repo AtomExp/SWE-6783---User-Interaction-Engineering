@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: 3ee0080fa6a8f4067bd60bb12681e644
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7827898720011838207
+    second: Glossy Wooden Vines Progress Bar_0
+  - first:
+      213: -1554917491927803338
+    second: Glossy Wooden Vines Progress Bar_1
+  - first:
+      213: -5209971322243335552
+    second: Glossy Wooden Vines Progress Bar_2
+  - first:
+      213: 8521374344234995448
+    second: Glossy Wooden Vines Progress Bar_3
+  - first:
+      213: 8027044396016788720
+    second: Glossy Wooden Vines Progress Bar_4
+  - first:
+      213: 4278889052881665689
+    second: Glossy Wooden Vines Progress Bar_5
+  - first:
+      213: 1703640212075690353
+    second: Glossy Wooden Vines Progress Bar_6
+  - first:
+      213: -5528602137977436633
+    second: Glossy Wooden Vines Progress Bar_7
+  - first:
+      213: 1681305490534105688
+    second: Glossy Wooden Vines Progress Bar_8
+  - first:
+      213: 3805654653033810306
+    second: Glossy Wooden Vines Progress Bar_9
+  - first:
+      213: 7534611010855771523
+    second: Glossy Wooden Vines Progress Bar_10
+  - first:
+      213: 5054324318249315950
+    second: Glossy Wooden Vines Progress Bar_11
+  - first:
+      213: -1794560444031727333
+    second: Glossy Wooden Vines Progress Bar_12
+  - first:
+      213: -1396609264623727742
+    second: Glossy Wooden Vines Progress Bar_13
+  - first:
+      213: 4583583592166018561
+    second: Glossy Wooden Vines Progress Bar_14
+  - first:
+      213: 3067818695856295754
+    second: Glossy Wooden Vines Progress Bar_15
+  - first:
+      213: 7817031369145759833
+    second: Glossy Wooden Vines Progress Bar_16
+  - first:
+      213: -6503191718886679367
+    second: Glossy Wooden Vines Progress Bar_17
+  - first:
+      213: 5463179801830401487
+    second: Glossy Wooden Vines Progress Bar_18
+  - first:
+      213: -7446119305905565054
+    second: Glossy Wooden Vines Progress Bar_19
+  - first:
+      213: -1917944305324754673
+    second: Glossy Wooden Vines Progress Bar_20
+  - first:
+      213: 4445499465322076793
+    second: Glossy Wooden Vines Progress Bar_21
+  - first:
+      213: -7411419426190894133
+    second: Glossy Wooden Vines Progress Bar_22
+  - first:
+      213: -1437184381726250119
+    second: Glossy Wooden Vines Progress Bar_23
+  - first:
+      213: 5103818730876577193
+    second: Glossy Wooden Vines Progress Bar_24
+  - first:
+      213: -2791496568146511992
+    second: Glossy Wooden Vines Progress Bar_25
+  - first:
+      213: -5945084931647402821
+    second: Glossy Wooden Vines Progress Bar_26
+  - first:
+      213: 1055634787097276391
+    second: Glossy Wooden Vines Progress Bar_27
+  - first:
+      213: -8263026141412440112
+    second: Glossy Wooden Vines Progress Bar_28
+  - first:
+      213: -3042521111234642144
+    second: Glossy Wooden Vines Progress Bar_29
+  - first:
+      213: -4308930701946904828
+    second: Glossy Wooden Vines Progress Bar_30
+  - first:
+      213: 2743668448346452143
+    second: Glossy Wooden Vines Progress Bar_31
+  - first:
+      213: -7304066291271205986
+    second: Glossy Wooden Vines Progress Bar_32
+  - first:
+      213: 3890013887355760214
+    second: Glossy Wooden Vines Progress Bar_33
+  - first:
+      213: -3098388628120821129
+    second: Glossy Wooden Vines Progress Bar_34
+  - first:
+      213: 3507869208202271584
+    second: Glossy Wooden Vines Progress Bar_35
+  - first:
+      213: 7710765335205747106
+    second: Glossy Wooden Vines Progress Bar_36
+  - first:
+      213: -6559970586833688128
+    second: Glossy Wooden Vines Progress Bar_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 31
+        width: 2096
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff26a00796842ac60800000000000000
+      internalID: 7827898720011838207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 628
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a1a9687c2db6ae0800000000000000
+      internalID: -1554917491927803338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 626
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ab6bf9fa672b7b0800000000000000
+      internalID: -5209971322243335552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_3
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 608
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe014261d0024670800000000000000
+      internalID: 8521374344234995448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_4
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 618
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4eedc595ac56f60800000000000000
+      internalID: 8027044396016788720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 610
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99eb15e4ceaa16b30800000000000000
+      internalID: 4278889052881665689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_6
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 616
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179b7d12fbb84a710800000000000000
+      internalID: 1703640212075690353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_7
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 610
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726c365b5a57643b0800000000000000
+      internalID: -5528602137977436633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_8
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 600
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852033a8f62355710800000000000000
+      internalID: 1681305490534105688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_9
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 618
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28984e36eb660d430800000000000000
+      internalID: 3805654653033810306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_10
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 618
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d1ec65bc0509860800000000000000
+      internalID: 7534611010855771523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_11
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 614
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e6ed04031942640800000000000000
+      internalID: 5054324318249315950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_12
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 618
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19858db8c07817e0800000000000000
+      internalID: -1794560444031727333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_13
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 576
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b451cf54f3e9ce0800000000000000
+      internalID: -1396609264623727742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_14
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 562
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e4d510ef82c9f30800000000000000
+      internalID: 4583583592166018561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_15
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 593
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f01d199d4139a20800000000000000
+      internalID: 3067818695856295754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_16
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 596
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958b4042d9cab7c60800000000000000
+      internalID: 7817031369145759833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_17
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 595
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc5f79469500c5a0800000000000000
+      internalID: -6503191718886679367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_18
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 594
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5a038a51d11db40800000000000000
+      internalID: 5463179801830401487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_19
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 593
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282125841f11aa890800000000000000
+      internalID: -7446119305905565054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_20
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 578
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f097226e0d71265e0800000000000000
+      internalID: -1917944305324754673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_21
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 594
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a16bfd53691bd30800000000000000
+      internalID: 4445499465322076793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_22
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 594
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb567c9c49552990800000000000000
+      internalID: -7411419426190894133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_23
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 600
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ba77a5b681e0ce0800000000000000
+      internalID: -1437184381726250119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_24
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 570
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a522e3381864d640800000000000000
+      internalID: 5103818730876577193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_25
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 602
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887b7e749ac9249d0800000000000000
+      internalID: -2791496568146511992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_26
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 588
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc01a9c0c0de7da0800000000000000
+      internalID: -5945084931647402821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_27
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 586
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef6a71fe3e56ae00800000000000000
+      internalID: 1055634787097276391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_28
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 564
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d74857f085d35d80800000000000000
+      internalID: -8263026141412440112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_29
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 581
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f7b375b2bc6c5d0800000000000000
+      internalID: -3042521111234642144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_30
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 576
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f1ea43b5a9334c0800000000000000
+      internalID: -4308930701946904828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_31
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 584
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0332dcae7731620800000000000000
+      internalID: 2743668448346452143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_32
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 564
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bffdc186eb2aa90800000000000000
+      internalID: -7304066291271205986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_33
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 577
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e2d27350b1cf530800000000000000
+      internalID: 3890013887355760214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_34
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 569
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772afbc65ff4005d0800000000000000
+      internalID: -3098388628120821129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_35
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 564
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b5d6995747ea030800000000000000
+      internalID: 3507869208202271584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_36
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 562
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9955f0834220b60800000000000000
+      internalID: 7710765335205747106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Wooden Vines Progress Bar_37
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 21
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c964cae18d46f4a0800000000000000
+      internalID: -6559970586833688128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glossy Wooden Vines Progress Bar_0: 7827898720011838207
+      Glossy Wooden Vines Progress Bar_1: -1554917491927803338
+      Glossy Wooden Vines Progress Bar_10: 7534611010855771523
+      Glossy Wooden Vines Progress Bar_11: 5054324318249315950
+      Glossy Wooden Vines Progress Bar_12: -1794560444031727333
+      Glossy Wooden Vines Progress Bar_13: -1396609264623727742
+      Glossy Wooden Vines Progress Bar_14: 4583583592166018561
+      Glossy Wooden Vines Progress Bar_15: 3067818695856295754
+      Glossy Wooden Vines Progress Bar_16: 7817031369145759833
+      Glossy Wooden Vines Progress Bar_17: -6503191718886679367
+      Glossy Wooden Vines Progress Bar_18: 5463179801830401487
+      Glossy Wooden Vines Progress Bar_19: -7446119305905565054
+      Glossy Wooden Vines Progress Bar_2: -5209971322243335552
+      Glossy Wooden Vines Progress Bar_20: -1917944305324754673
+      Glossy Wooden Vines Progress Bar_21: 4445499465322076793
+      Glossy Wooden Vines Progress Bar_22: -7411419426190894133
+      Glossy Wooden Vines Progress Bar_23: -1437184381726250119
+      Glossy Wooden Vines Progress Bar_24: 5103818730876577193
+      Glossy Wooden Vines Progress Bar_25: -2791496568146511992
+      Glossy Wooden Vines Progress Bar_26: -5945084931647402821
+      Glossy Wooden Vines Progress Bar_27: 1055634787097276391
+      Glossy Wooden Vines Progress Bar_28: -8263026141412440112
+      Glossy Wooden Vines Progress Bar_29: -3042521111234642144
+      Glossy Wooden Vines Progress Bar_3: 8521374344234995448
+      Glossy Wooden Vines Progress Bar_30: -4308930701946904828
+      Glossy Wooden Vines Progress Bar_31: 2743668448346452143
+      Glossy Wooden Vines Progress Bar_32: -7304066291271205986
+      Glossy Wooden Vines Progress Bar_33: 3890013887355760214
+      Glossy Wooden Vines Progress Bar_34: -3098388628120821129
+      Glossy Wooden Vines Progress Bar_35: 3507869208202271584
+      Glossy Wooden Vines Progress Bar_36: 7710765335205747106
+      Glossy Wooden Vines Progress Bar_37: -6559970586833688128
+      Glossy Wooden Vines Progress Bar_4: 8027044396016788720
+      Glossy Wooden Vines Progress Bar_5: 4278889052881665689
+      Glossy Wooden Vines Progress Bar_6: 1703640212075690353
+      Glossy Wooden Vines Progress Bar_7: -5528602137977436633
+      Glossy Wooden Vines Progress Bar_8: 1681305490534105688
+      Glossy Wooden Vines Progress Bar_9: 3805654653033810306
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

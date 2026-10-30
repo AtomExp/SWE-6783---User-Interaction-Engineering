@@ -13,4 +13,9 @@ public class MainMenuController : MonoBehaviour
     {
         SceneLoader.Load(SceneNames.Instructions);
     }
+
+    public void OpenScoreDashboard()
+    {
+        SceneLoader.Load(SceneNames.ScoreDashboard);
+    }
 }

@@ -8,6 +8,9 @@ public static class SceneNames
     public const string DifficultySelection = "DifficultySelection";
     public const string Instructions = "Instructions";
     public const string StudyPhase = "StudyPhase";
+    public const string GameLevel = "GameLevel";
+    public const string ScoreDashboard = "ScoreDashboard";
+    public const string Options = "Options";
 }
 
 public static class SceneLoader

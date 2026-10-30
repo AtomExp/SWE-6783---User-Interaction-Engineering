@@ -8,8 +8,15 @@ public class DifficultySelectionController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void SelectEasyMode()
+    {
+        GameSettings.SelectedDifficulty = Difficulty.Easy;
+        SceneManager.LoadScene("StudyPhase");
+    }
+
     public void SelectHardMode()
     {
+        GameSettings.SelectedDifficulty = Difficulty.Hard;
         SceneManager.LoadScene("StudyPhase");
     }
 }

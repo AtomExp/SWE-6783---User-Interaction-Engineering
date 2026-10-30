@@ -7,100 +7,108 @@ public class StudyPhaseTimer : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private TMP_Text timerText;
+    [SerializeField] private GameObject timerClock;
+    [SerializeField] private GameObject secondsLeftText;
     [SerializeField] private StudyMemoryBoard memoryBoard;
     [SerializeField] private ClockShake clockShake;
 
-    [Header("Hard Mode Settings")]
+    [Header("Settings")]
     [SerializeField] private int countdownSeconds = 10;
     [SerializeField] private float transitionDelay = 0.5f;
 
-    private bool studyStarted;
     private bool transitionStarted;
 
     private void Start()
     {
-        // Wait for the player to press READY.
-        if (timerText != null)
-        {
-            timerText.text = countdownSeconds.ToString();
-        }
-    }
-
-    public void BeginStudyPhase()
-    {
-        if (studyStarted || transitionStarted)
-            return;
-
         if (memoryBoard == null)
         {
-            Debug.LogError(
-                "StudyPhaseTimer: MemoryBoard is not assigned."
-            );
+            Debug.LogError("StudyPhaseTimer: MemoryBoard is not assigned.");
             return;
         }
 
-        studyStarted = true;
-
-        // Reveal all cards.
+        // Show all cards immediately.
         memoryBoard.ShowAllCards();
 
-        // Start normal clock shaking.
-        if (clockShake != null)
+        if (GameSettings.SelectedDifficulty == Difficulty.Hard)
         {
-            clockShake.StartShaking();
-        }
+            // HARD MODE: Show timer and clock.
+            if (timerClock != null)
+                timerClock.SetActive(true);
 
-        StartCoroutine(Countdown());
+            if (timerText != null)
+            {
+                timerText.gameObject.SetActive(true);
+                timerText.text = countdownSeconds.ToString();
+            }
+
+            if (secondsLeftText != null)
+                secondsLeftText.SetActive(true);
+
+            if (clockShake != null)
+                clockShake.StartShaking();
+
+            // Start countdown automatically.
+            StartCoroutine(Countdown());
+        }
+        else
+        {
+            // EASY MODE: Hide timer and clock.
+            if (timerClock != null)
+                timerClock.SetActive(false);
+
+            if (timerText != null)
+                timerText.gameObject.SetActive(false);
+
+            if (secondsLeftText != null)
+                secondsLeftText.SetActive(false);
+
+            if (clockShake != null)
+                clockShake.StopShaking();
+        }
     }
 
     private IEnumerator Countdown()
     {
         int remaining = countdownSeconds;
 
-        while (remaining > 0)
+        while (remaining > 0 && !transitionStarted)
         {
             if (timerText != null)
-            {
                 timerText.text = remaining.ToString();
-            }
 
             yield return new WaitForSeconds(1f);
             remaining--;
 
-            // Increase shaking during the final 5 seconds.
+            // Increase clock shaking during the final 5 seconds.
             if (remaining == 5 && clockShake != null)
-            {
                 clockShake.StartIntenseShaking();
-            }
         }
 
-        if (timerText != null)
-        {
-            timerText.text = "0";
-        }
+        if (!transitionStarted)
+            GoToGameLevel();
+    }
 
-        yield return StartCoroutine(TransitionToGameplay());
+    // Called by the READY button in both difficulty modes.
+    public void GoToGameLevel()
+    {
+        if (transitionStarted)
+            return;
+
+        transitionStarted = true;
+        StartCoroutine(TransitionToGameplay());
     }
 
     private IEnumerator TransitionToGameplay()
     {
-        if (transitionStarted)
-            yield break;
+        // Hide cards before entering GameLevel.
+        if (memoryBoard != null)
+            memoryBoard.HideAllCards();
 
-        transitionStarted = true;
-
-        // Hide all cards.
-        memoryBoard.HideAllCards();
-
-        // Stop clock shaking.
         if (clockShake != null)
-        {
             clockShake.StopShaking();
-        }
 
         yield return new WaitForSeconds(transitionDelay);
 
-        // Load the gameplay scene.
         SceneManager.LoadScene("GameLevel");
     }
 }

@@ -1,0 +1,1406 @@
+fileFormatVersion: 2
+guid: e908bba3b9d6f408f8928e4bf90abc6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6709321238296462448
+    second: Rounded Wooden Game UI Plaque_0
+  - first:
+      213: -1524643951910815755
+    second: Rounded Wooden Game UI Plaque_1
+  - first:
+      213: 1450276306717655500
+    second: Rounded Wooden Game UI Plaque_2
+  - first:
+      213: -3790421146667772099
+    second: Rounded Wooden Game UI Plaque_3
+  - first:
+      213: -7970585789634290591
+    second: Rounded Wooden Game UI Plaque_4
+  - first:
+      213: -1052636835049651987
+    second: Rounded Wooden Game UI Plaque_5
+  - first:
+      213: -2349205727631694778
+    second: Rounded Wooden Game UI Plaque_6
+  - first:
+      213: 6441969999896112005
+    second: Rounded Wooden Game UI Plaque_7
+  - first:
+      213: -4864796391757239220
+    second: Rounded Wooden Game UI Plaque_8
+  - first:
+      213: 3097472634117237698
+    second: Rounded Wooden Game UI Plaque_9
+  - first:
+      213: 3767950813403346985
+    second: Rounded Wooden Game UI Plaque_10
+  - first:
+      213: 6268622140673288798
+    second: Rounded Wooden Game UI Plaque_11
+  - first:
+      213: 5789303425191072383
+    second: Rounded Wooden Game UI Plaque_12
+  - first:
+      213: -2340530337899922647
+    second: Rounded Wooden Game UI Plaque_13
+  - first:
+      213: 8793040032306561280
+    second: Rounded Wooden Game UI Plaque_14
+  - first:
+      213: 4524053809497949294
+    second: Rounded Wooden Game UI Plaque_15
+  - first:
+      213: 8770422919141882189
+    second: Rounded Wooden Game UI Plaque_16
+  - first:
+      213: -8552546720072801658
+    second: Rounded Wooden Game UI Plaque_17
+  - first:
+      213: -5396466970001335328
+    second: Rounded Wooden Game UI Plaque_18
+  - first:
+      213: -5397052779024729024
+    second: Rounded Wooden Game UI Plaque_19
+  - first:
+      213: -2031238419548048430
+    second: Rounded Wooden Game UI Plaque_20
+  - first:
+      213: 532846576578772860
+    second: Rounded Wooden Game UI Plaque_21
+  - first:
+      213: -891607777548009177
+    second: Rounded Wooden Game UI Plaque_22
+  - first:
+      213: 8868665438224097065
+    second: Rounded Wooden Game UI Plaque_23
+  - first:
+      213: 7288261544448102180
+    second: Rounded Wooden Game UI Plaque_24
+  - first:
+      213: -5905538013560971021
+    second: Rounded Wooden Game UI Plaque_25
+  - first:
+      213: 4569547593158643919
+    second: Rounded Wooden Game UI Plaque_26
+  - first:
+      213: -7699519239436715718
+    second: Rounded Wooden Game UI Plaque_27
+  - first:
+      213: 125776554883304218
+    second: Rounded Wooden Game UI Plaque_28
+  - first:
+      213: -8086866803704608603
+    second: Rounded Wooden Game UI Plaque_29
+  - first:
+      213: 4206160992993247758
+    second: Rounded Wooden Game UI Plaque_30
+  - first:
+      213: -6760402185728614075
+    second: Rounded Wooden Game UI Plaque_31
+  - first:
+      213: -1396812335426353898
+    second: Rounded Wooden Game UI Plaque_32
+  - first:
+      213: -2619652353599840799
+    second: Rounded Wooden Game UI Plaque_33
+  - first:
+      213: -3648969561636460285
+    second: Rounded Wooden Game UI Plaque_34
+  - first:
+      213: -4054085452837366277
+    second: Rounded Wooden Game UI Plaque_35
+  - first:
+      213: -3935912295162267631
+    second: Rounded Wooden Game UI Plaque_36
+  - first:
+      213: -2447755831157715850
+    second: Rounded Wooden Game UI Plaque_37
+  - first:
+      213: 6964525679129693256
+    second: Rounded Wooden Game UI Plaque_38
+  - first:
+      213: 7605228032835581475
+    second: Rounded Wooden Game UI Plaque_39
+  - first:
+      213: -6695302184904661325
+    second: Rounded Wooden Game UI Plaque_40
+  - first:
+      213: 3234141334916157986
+    second: Rounded Wooden Game UI Plaque_41
+  - first:
+      213: 2289549366112694383
+    second: Rounded Wooden Game UI Plaque_42
+  - first:
+      213: 9148211797885912837
+    second: Rounded Wooden Game UI Plaque_43
+  - first:
+      213: -3463515635657061098
+    second: Rounded Wooden Game UI Plaque_44
+  - first:
+      213: -7861687771874399648
+    second: Rounded Wooden Game UI Plaque_45
+  - first:
+      213: 8412012380832914852
+    second: Rounded Wooden Game UI Plaque_46
+  - first:
+      213: 8109758705058398850
+    second: Rounded Wooden Game UI Plaque_47
+  - first:
+      213: -871778398579258825
+    second: Rounded Wooden Game UI Plaque_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 659
+        width: 98
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07405a46e1c4c1d50800000000000000
+      internalID: 6709321238296462448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 657
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f77865576067dae0800000000000000
+      internalID: -1524643951910815755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_2
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 652
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc14218fd9a602410800000000000000
+      internalID: 1450276306717655500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_3
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 642
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d371db3bc08b56bc0800000000000000
+      internalID: -3790421146667772099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_4
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 659
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c521d447ac26190800000000000000
+      internalID: -7970585789634290591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_5
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 673
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0cf5920684461f0800000000000000
+      internalID: -1052636835049651987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_6
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 634
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644233c56d1f56fd0800000000000000
+      internalID: -2349205727631694778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_7
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 653
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58be7897599766950800000000000000
+      internalID: 6441969999896112005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_8
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 661
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c25bcd475cc7cb0800000000000000
+      internalID: -4864796391757239220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_9
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 642
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb2d0a13fe6cfa20800000000000000
+      internalID: 3097472634117237698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_10
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 683
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928fc042d437a4430800000000000000
+      internalID: 3767950813403346985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_11
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 674
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5aeaf5df9e9ef650800000000000000
+      internalID: 6268622140673288798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_12
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 674
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72577bcaccb75050800000000000000
+      internalID: 5789303425191072383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_13
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 665
+        width: 43
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b337fee04c48fd0800000000000000
+      internalID: -2340530337899922647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 2160
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0010c656257270a70800000000000000
+      internalID: 8793040032306561280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_15
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 662
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64c0e368faa8ce30800000000000000
+      internalID: 4524053809497949294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_16
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 663
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4975616d2dc6b970800000000000000
+      internalID: 8770422919141882189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_17
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 659
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682e02942104f4980800000000000000
+      internalID: -8552546720072801658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_18
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 659
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb11fae1e5eb15b0800000000000000
+      internalID: -5396466970001335328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_19
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 661
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c3230a711d915b0800000000000000
+      internalID: -5397052779024729024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_20
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 652
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d376bc5b679fc3e0800000000000000
+      internalID: -2031238419548048430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_21
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 642
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fb2c4632d056700800000000000000
+      internalID: 532846576578772860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_22
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 658
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7218644437f50a3f0800000000000000
+      internalID: -891607777548009177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_23
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 651
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f91255a34d31b70800000000000000
+      internalID: 8868665438224097065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_24
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 665
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f08f2824b152560800000000000000
+      internalID: 7288261544448102180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_25
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 661
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0e12e27705b0ea0800000000000000
+      internalID: -5905538013560971021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_26
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 637
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc05672535b4a6f30800000000000000
+      internalID: 4569547593158643919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_27
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 651
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39b618ab00d52590800000000000000
+      internalID: -7699519239436715718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 648
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b44ea3c19deb100800000000000000
+      internalID: 125776554883304218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 653
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8c943fc7da5cf80800000000000000
+      internalID: -8086866803704608603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_30
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 651
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02877f43294f5a30800000000000000
+      internalID: 4206160992993247758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_31
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 650
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5412fdcb70a3e22a0800000000000000
+      internalID: -6760402185728614075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_32
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 640
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6154701e4968d9ce0800000000000000
+      internalID: -1396812335426353898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_33
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 657
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed5aac501025abd0800000000000000
+      internalID: -2619652353599840799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_34
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 648
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309227a44814c5dc0800000000000000
+      internalID: -3648969561636460285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_35
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 652
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5dc8692cefcb7c0800000000000000
+      internalID: -4054085452837366277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_36
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 655
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118b2c3fe94d069c0800000000000000
+      internalID: -3935912295162267631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_37
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 654
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c04f25a03d70ed0800000000000000
+      internalID: -2447755831157715850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_38
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 637
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c8c9d9437f6a060800000000000000
+      internalID: 6964525679129693256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_39
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 644
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326f1050a923b8960800000000000000
+      internalID: 7605228032835581475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_40
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 642
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b66cd4d2228513a0800000000000000
+      internalID: -6695302184904661325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_41
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 648
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222d51da86af1ec20800000000000000
+      internalID: 3234141334916157986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_42
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 640
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f603ed6940d16cf10800000000000000
+      internalID: 2289549366112694383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_43
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 634
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507070f292af4fe70800000000000000
+      internalID: 9148211797885912837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_44
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 645
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d46ae31ee1fefc0800000000000000
+      internalID: -3463515635657061098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_45
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 634
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ae46edf9ca5e290800000000000000
+      internalID: -7861687771874399648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_46
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 640
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4addbbd01b87db470800000000000000
+      internalID: 8412012380832914852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_47
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 634
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282432d2396ab8070800000000000000
+      internalID: 8109758705058398850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rounded Wooden Game UI Plaque_48
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 638
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a03d55a22d6e3f0800000000000000
+      internalID: -871778398579258825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rounded Wooden Game UI Plaque_0: 6709321238296462448
+      Rounded Wooden Game UI Plaque_1: -1524643951910815755
+      Rounded Wooden Game UI Plaque_10: 3767950813403346985
+      Rounded Wooden Game UI Plaque_11: 6268622140673288798
+      Rounded Wooden Game UI Plaque_12: 5789303425191072383
+      Rounded Wooden Game UI Plaque_13: -2340530337899922647
+      Rounded Wooden Game UI Plaque_14: 8793040032306561280
+      Rounded Wooden Game UI Plaque_15: 4524053809497949294
+      Rounded Wooden Game UI Plaque_16: 8770422919141882189
+      Rounded Wooden Game UI Plaque_17: -8552546720072801658
+      Rounded Wooden Game UI Plaque_18: -5396466970001335328
+      Rounded Wooden Game UI Plaque_19: -5397052779024729024
+      Rounded Wooden Game UI Plaque_2: 1450276306717655500
+      Rounded Wooden Game UI Plaque_20: -2031238419548048430
+      Rounded Wooden Game UI Plaque_21: 532846576578772860
+      Rounded Wooden Game UI Plaque_22: -891607777548009177
+      Rounded Wooden Game UI Plaque_23: 8868665438224097065
+      Rounded Wooden Game UI Plaque_24: 7288261544448102180
+      Rounded Wooden Game UI Plaque_25: -5905538013560971021
+      Rounded Wooden Game UI Plaque_26: 4569547593158643919
+      Rounded Wooden Game UI Plaque_27: -7699519239436715718
+      Rounded Wooden Game UI Plaque_28: 125776554883304218
+      Rounded Wooden Game UI Plaque_29: -8086866803704608603
+      Rounded Wooden Game UI Plaque_3: -3790421146667772099
+      Rounded Wooden Game UI Plaque_30: 4206160992993247758
+      Rounded Wooden Game UI Plaque_31: -6760402185728614075
+      Rounded Wooden Game UI Plaque_32: -1396812335426353898
+      Rounded Wooden Game UI Plaque_33: -2619652353599840799
+      Rounded Wooden Game UI Plaque_34: -3648969561636460285
+      Rounded Wooden Game UI Plaque_35: -4054085452837366277
+      Rounded Wooden Game UI Plaque_36: -3935912295162267631
+      Rounded Wooden Game UI Plaque_37: -2447755831157715850
+      Rounded Wooden Game UI Plaque_38: 6964525679129693256
+      Rounded Wooden Game UI Plaque_39: 7605228032835581475
+      Rounded Wooden Game UI Plaque_4: -7970585789634290591
+      Rounded Wooden Game UI Plaque_40: -6695302184904661325
+      Rounded Wooden Game UI Plaque_41: 3234141334916157986
+      Rounded Wooden Game UI Plaque_42: 2289549366112694383
+      Rounded Wooden Game UI Plaque_43: 9148211797885912837
+      Rounded Wooden Game UI Plaque_44: -3463515635657061098
+      Rounded Wooden Game UI Plaque_45: -7861687771874399648
+      Rounded Wooden Game UI Plaque_46: 8412012380832914852
+      Rounded Wooden Game UI Plaque_47: 8109758705058398850
+      Rounded Wooden Game UI Plaque_48: -871778398579258825
+      Rounded Wooden Game UI Plaque_5: -1052636835049651987
+      Rounded Wooden Game UI Plaque_6: -2349205727631694778
+      Rounded Wooden Game UI Plaque_7: 6441969999896112005
+      Rounded Wooden Game UI Plaque_8: -4864796391757239220
+      Rounded Wooden Game UI Plaque_9: 3097472634117237698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

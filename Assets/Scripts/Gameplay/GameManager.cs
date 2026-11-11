@@ -7,12 +7,7 @@ using UnityEngine.SceneManagement;
 
 public enum GamePhase
 {
-    NotStarted,
-    Observe,
-    Selecting,
-    Checking,
-    LevelComplete,
-    GameOver
+    NotStarted, Observe, Selecting, Checking, LevelComplete, GameOver
 }
 
 // Controls the complete game session inside StudyPhase.

@@ -2,11 +2,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Controls the gameplay HUD, lives, score, level and observation timer.
 public class HUDController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameManager manager;
+
+    [Header("Buttons")]
+    [SerializeField] private GameObject homeButton;
+    [SerializeField] private GameObject readyButton;
+    [SerializeField] private GameObject pauseButton;
 
     [Header("Phase Visibility")]
     [SerializeField] private GameObject instructionBannerRoot;
@@ -24,27 +28,18 @@ public class HUDController : MonoBehaviour
     [Header("Optional")]
     [SerializeField] private GameObject timerRoot;
     [SerializeField] private Image[] lifeIcons;
-    [SerializeField] private Color lifeLostColor =
-        new Color(1f, 1f, 1f, 0.25f);
 
     [Header("Messages")]
-    [SerializeField] private string observeMessage =
-        "Look at the pattern carefully!";
-
-    [SerializeField] private string observeTimedMessage =
-        "Look at the pattern carefully!";
-
-    [SerializeField] private string selectMessage =
-        "Find the matching pairs!";
-
-    [SerializeField] private string levelCompleteMessage =
-        "Level clear! Next level...";
-
-    [SerializeField] private string gameOverMessage =
-        "Out of lives!";
+    [SerializeField] private string observeMessage = "Look at the pattern carefully!";
+    [SerializeField] private string observeTimedMessage = "Look at the pattern carefully!";
+    [SerializeField] private string selectMessage = "Find the matching pairs!";
+    [SerializeField] private string levelCompleteMessage = "Level clear! Next level...";
+    [SerializeField] private string gameOverMessage = "Out of lives!";
 
     private GameState boundState;
-    private Color lifeColor = Color.white;
+    private float heartCenterX;
+    private float heartSpacing;
+    private bool heartLayoutInitialized;
 
     private void Start()
     {
@@ -53,8 +48,7 @@ public class HUDController : MonoBehaviour
 
         if (manager == null)
         {
-            Debug.LogWarning(
-                "HUDController: no GameManager found.", this);
+            Debug.LogWarning("HUDController: no GameManager found.", this);
             enabled = false;
             return;
         }
@@ -62,12 +56,7 @@ public class HUDController : MonoBehaviour
         if (timerRoot == null && timerText != null)
             timerRoot = timerText.gameObject;
 
-        if (lifeIcons != null &&
-            lifeIcons.Length > 0 &&
-            lifeIcons[0] != null)
-        {
-            lifeColor = lifeIcons[0].color;
-        }
+        InitializeHeartLayout();
 
         manager.GameStarted += Bind;
         manager.PhaseChanged += HandlePhaseChanged;
@@ -93,10 +82,25 @@ public class HUDController : MonoBehaviour
         manager.PairChecked -= HandlePairChecked;
     }
 
+    private void InitializeHeartLayout()
+    {
+        if (lifeIcons == null || lifeIcons.Length < 2 ||
+            lifeIcons[0] == null || lifeIcons[1] == null ||
+            lifeIcons[lifeIcons.Length - 1] == null)
+            return;
+
+        float firstX = lifeIcons[0].rectTransform.anchoredPosition.x;
+        float secondX = lifeIcons[1].rectTransform.anchoredPosition.x;
+        float lastX = lifeIcons[lifeIcons.Length - 1].rectTransform.anchoredPosition.x;
+
+        heartCenterX = (firstX + lastX) / 2f;
+        heartSpacing = Mathf.Abs(secondX - firstX);
+        heartLayoutInitialized = true;
+    }
+
     private void Bind(GameState state)
     {
         Unbind();
-
         boundState = state;
 
         state.ScoreChanged += UpdateScore;
@@ -134,35 +138,55 @@ public class HUDController : MonoBehaviour
 
     private void UpdateLives(int lives)
     {
-        SetText(livesText, $"Lives: {lives}");
+        Debug.Log("HUD received lives update: " + lives);
 
         if (lifeIcons == null)
             return;
 
+        lives = Mathf.Clamp(lives, 0, lifeIcons.Length);
+
         for (int i = 0; i < lifeIcons.Length; i++)
         {
-            if (lifeIcons[i] != null)
+            if (lifeIcons[i] == null)
+                continue;
+
+            if (heartLayoutInitialized && i < lives)
             {
-                lifeIcons[i].color =
-                    i < lives ? lifeColor : lifeLostColor;
+                RectTransform rect = lifeIcons[i].rectTransform;
+                Vector2 position = rect.anchoredPosition;
+
+                position.x = heartCenterX +
+                    (i - (lives - 1) / 2f) * heartSpacing;
+
+                rect.anchoredPosition = position;
             }
+
+            lifeIcons[i].gameObject.SetActive(i < lives);
         }
     }
 
     private void HandlePhaseChanged(GamePhase phase)
     {
         bool observing = phase == GamePhase.Observe;
+        bool matching = phase == GamePhase.Selecting ||
+                        phase == GamePhase.Checking;
 
-        bool timed =
-            observing && manager.IsObservationTimed;
+        bool timed = observing && manager.IsObservationTimed;
 
-        bool showGameplayHud = !observing;
+        if (homeButton != null)
+            homeButton.SetActive(observing);
+
+        if (readyButton != null)
+            readyButton.SetActive(observing);
+
+        if (pauseButton != null)
+            pauseButton.SetActive(matching);
 
         if (instructionBannerRoot != null)
             instructionBannerRoot.SetActive(observing);
 
         if (gameplayHudRoot != null)
-            gameplayHudRoot.SetActive(showGameplayHud);
+            gameplayHudRoot.SetActive(!observing);
 
         if (timerRoot != null)
             timerRoot.SetActive(timed);
@@ -173,8 +197,7 @@ public class HUDController : MonoBehaviour
         switch (phase)
         {
             case GamePhase.Observe:
-                SetText(messageText,
-                    timed ? observeTimedMessage : observeMessage);
+                SetText(messageText, timed ? observeTimedMessage : observeMessage);
                 break;
 
             case GamePhase.Selecting:
@@ -196,8 +219,7 @@ public class HUDController : MonoBehaviour
 
     private void HandleTimerTick(float secondsLeft)
     {
-        SetText(timerText,
-            Mathf.CeilToInt(secondsLeft).ToString());
+        SetText(timerText, Mathf.CeilToInt(secondsLeft).ToString());
     }
 
     private void HandlePairChecked(PickResult result)
@@ -212,12 +234,8 @@ public class HUDController : MonoBehaviour
 
         var round = manager.CurrentRound;
 
-        SetText(
-            pairsText,
-            round != null
-                ? $"Pairs: {round.PairsFound}/{round.PairCount}"
-                : string.Empty
-        );
+        SetText(pairsText,
+            round != null ? $"Pairs: {round.PairsFound}/{round.PairCount}" : "");
     }
 
     private static void SetText(TMP_Text label, string value)

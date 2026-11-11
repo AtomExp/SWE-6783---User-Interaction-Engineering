@@ -438,6 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDController
   manager: {fileID: 1491687641}
+  readyButton: {fileID: 1114589132}
+  pauseButton: {fileID: 1233243265}
   instructionBannerRoot: {fileID: 306069079}
   gameplayHudRoot: {fileID: 3133301}
   scoreText: {fileID: 883661873}
@@ -454,7 +456,6 @@ MonoBehaviour:
   - {fileID: 2121021811}
   - {fileID: 481436269}
   - {fileID: 837728691}
-  lifeLostColor: {r: 1, g: 1, b: 1, a: 0.25}
   observeMessage: Memorize the cards!
   observeTimedMessage: Memorize the cards before time runs out!
   selectMessage: Find the matching pairs!
@@ -878,7 +879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &306069080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2671,7 +2672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1233243266
 MonoBehaviour:
   m_ObjectHideFlags: 0

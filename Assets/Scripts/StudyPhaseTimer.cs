@@ -1,7 +1,5 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StudyPhaseTimer : MonoBehaviour
 {
@@ -9,106 +7,119 @@ public class StudyPhaseTimer : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private GameObject timerClock;
     [SerializeField] private GameObject secondsLeftText;
-    [SerializeField] private StudyMemoryBoard memoryBoard;
     [SerializeField] private ClockShake clockShake;
 
-    [Header("Settings")]
-    [SerializeField] private int countdownSeconds = 10;
-    [SerializeField] private float transitionDelay = 0.5f;
+    [Header("Game Controls")]
+    [SerializeField] private GameObject readyButton;
+    [SerializeField] private GameObject pauseButton;
 
-    private bool transitionStarted;
+    private GameManager gameManager;
 
     private void Start()
     {
-        if (memoryBoard == null)
+        gameManager = GameManager.Instance;
+
+        if (gameManager == null)
         {
-            Debug.LogError("StudyPhaseTimer: MemoryBoard is not assigned.");
+            Debug.LogError(
+                "StudyPhaseTimer: GameManager instance not found."
+            );
             return;
         }
 
-        // Show all cards immediately.
-        memoryBoard.ShowAllCards();
+        gameManager.PhaseChanged += HandlePhaseChanged;
+        gameManager.ObservationTick += HandleObservationTick;
 
-        if (GameSettings.SelectedDifficulty == Difficulty.Hard)
+        // Synchronise the UI with the current game phase.
+        HandlePhaseChanged(gameManager.Phase);
+
+        if (gameManager.IsObservationTimed)
         {
-            // HARD MODE: Show timer and clock.
-            if (timerClock != null)
-                timerClock.SetActive(true);
-
-            if (timerText != null)
-            {
-                timerText.gameObject.SetActive(true);
-                timerText.text = countdownSeconds.ToString();
-            }
-
-            if (secondsLeftText != null)
-                secondsLeftText.SetActive(true);
-
-            if (clockShake != null)
-                clockShake.StartShaking();
-
-            // Start countdown automatically.
-            StartCoroutine(Countdown());
+            HandleObservationTick(
+                gameManager.ObservationTimeRemaining
+            );
         }
-        else
+    }
+
+    private void OnDestroy()
+    {
+        if (gameManager != null)
         {
-            // EASY MODE: Hide timer and clock.
-            if (timerClock != null)
-                timerClock.SetActive(false);
+            gameManager.PhaseChanged -= HandlePhaseChanged;
+            gameManager.ObservationTick -= HandleObservationTick;
+        }
+    }
 
-            if (timerText != null)
-                timerText.gameObject.SetActive(false);
+    // Called whenever the game changes phase.
+    private void HandlePhaseChanged(GamePhase phase)
+    {
+        bool observing = phase == GamePhase.Observe;
 
-            if (secondsLeftText != null)
-                secondsLeftText.SetActive(false);
+        bool matching =
+            phase == GamePhase.Selecting ||
+            phase == GamePhase.Checking;
 
-            if (clockShake != null)
+        // Show the clock only during Hard-mode observation.
+        bool showClock =
+            observing && gameManager.IsObservationTimed;
+
+        if (timerClock != null)
+            timerClock.SetActive(showClock);
+
+        if (secondsLeftText != null)
+            secondsLeftText.SetActive(showClock);
+
+        if (timerText != null)
+            timerText.gameObject.SetActive(showClock);
+
+        // READY is visible during observation.
+        if (readyButton != null)
+            readyButton.SetActive(observing);
+
+        // PAUSE is visible during matching.
+        if (pauseButton != null)
+            pauseButton.SetActive(matching);
+
+        // Control the clock animation.
+        if (clockShake != null)
+        {
+            if (showClock)
+                clockShake.StartShaking();
+            else
                 clockShake.StopShaking();
         }
-    }
 
-    private IEnumerator Countdown()
-    {
-        int remaining = countdownSeconds;
-
-        while (remaining > 0 && !transitionStarted)
+        if (phase == GamePhase.LevelComplete ||
+            phase == GamePhase.GameOver)
         {
-            if (timerText != null)
-                timerText.text = remaining.ToString();
+            if (readyButton != null)
+                readyButton.SetActive(false);
 
-            yield return new WaitForSeconds(1f);
-            remaining--;
-
-            // Increase clock shaking during the final 5 seconds.
-            if (remaining == 5 && clockShake != null)
-                clockShake.StartIntenseShaking();
+            if (pauseButton != null)
+                pauseButton.SetActive(false);
         }
-
-        if (!transitionStarted)
-            GoToGameLevel();
     }
 
-    // Called by the READY button in both difficulty modes.
-    public void GoToGameLevel()
+    // Updates the countdown using GameManager's timer.
+    private void HandleObservationTick(float remaining)
     {
-        if (transitionStarted)
+        if (timerText == null)
             return;
 
-        transitionStarted = true;
-        StartCoroutine(TransitionToGameplay());
+        int seconds = Mathf.CeilToInt(remaining);
+
+        timerText.text = seconds.ToString();
+
+        if (seconds <= 5 && seconds > 0 && clockShake != null)
+            clockShake.StartIntenseShaking();
     }
 
-    private IEnumerator TransitionToGameplay()
+    // Connect this method to the READY button.
+    public void GoToGameLevel()
     {
-        // Hide cards before entering GameLevel.
-        if (memoryBoard != null)
-            memoryBoard.HideAllCards();
+        if (gameManager == null)
+            return;
 
-        if (clockShake != null)
-            clockShake.StopShaking();
-
-        yield return new WaitForSeconds(transitionDelay);
-
-        SceneManager.LoadScene("GameLevel");
+        gameManager.EndObservation();
     }
 }

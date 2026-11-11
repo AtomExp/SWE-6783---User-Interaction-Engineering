@@ -7,17 +7,10 @@ using UnityEngine.SceneManagement;
 
 public enum GamePhase
 {
-    NotStarted,
-    Observe,
-    Selecting,
-    Checking,
-    LevelComplete,
-    GameOver
+    NotStarted, Observe, Selecting, Checking, LevelComplete, GameOver
 }
 
-// Controls the matching game and preserves the game session
-// while moving between StudyPhase and GameLevel.
-
+// Controls the complete game session inside StudyPhase.
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
@@ -32,7 +25,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float levelCompleteDelay = 1.25f;
     [SerializeField] private float gameOverDelay = 1f;
 
-    [Tooltip("Start a new game when the first GameLevel scene loads.")]
+    [Tooltip("Start a new game when StudyPhase loads.")]
     [SerializeField] private bool startOnLoad = true;
 
     [Header("Events (audio, animations)")]
@@ -124,7 +117,8 @@ public class GameManager : MonoBehaviour
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name != SceneNames.GameLevel)
+        // The game board is now located in StudyPhase.
+        if (scene.name != SceneNames.StudyPhase)
             return;
 
         FindAndAssignBoard();
@@ -132,16 +126,17 @@ public class GameManager : MonoBehaviour
         if (board == null)
         {
             Debug.LogError(
-                "GameManager: Could not find MemoryBoard in GameLevel."
+                "GameManager: Could not find MemoryBoard in StudyPhase."
             );
             return;
         }
 
-        if (State == null)
-            return;
-
-        if (Phase != GamePhase.GameOver)
+        // If an existing game session returns to StudyPhase,
+        // prepare the current level.
+        if (State != null && Phase != GamePhase.GameOver)
+        {
             StartLevel();
+        }
     }
 
     private void FindAndAssignBoard()
@@ -151,7 +146,7 @@ public class GameManager : MonoBehaviour
         if (board != null)
             board.Started -= HandleBoardStarted;
 
-        board = FindFirstObjectByType<MemoryBoard>();
+        board = FindAnyObjectByType<MemoryBoard>();
 
         if (board != null)
         {
@@ -184,8 +179,6 @@ public class GameManager : MonoBehaviour
     // PUBLIC API
     // --------------------------------------------------
 
-    // Prepares a completely new game without building
-    // the gameplay board yet.
     public void PrepareNewGame(Difficulty difficulty)
     {
         StopPending();
@@ -214,7 +207,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("New game prepared: " + difficulty);
     }
 
-    // Starts a new game and builds the board when available.
     public void StartGame(Difficulty difficulty)
     {
         PrepareNewGame(difficulty);
@@ -226,11 +218,13 @@ public class GameManager : MonoBehaviour
         StartGame(Difficulty);
     }
 
-    // Retained for compatibility with existing scripts.
+    // Called when READY is pressed or the Hard timer expires.
     public void EndObservation()
     {
         if (Phase == GamePhase.Observe && board != null)
+        {
             board.StartGame();
+        }
     }
 
     public void GoToMainMenu()
@@ -254,6 +248,11 @@ public class GameManager : MonoBehaviour
 
         StopPending();
 
+        UnsubscribeCards();
+
+        // Do not reuse the previous level's card pattern.
+        SharedCardPattern.SymbolIDs = null;
+
         int pairs = State.PairsThisLevel;
 
         if (pairs > board.SymbolCount)
@@ -276,10 +275,13 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        // Generate the cards for this level.
+        // MemoryCard.Initialize displays each card face up.
         board.BuildBoard(pairs);
 
         SubscribeCards();
 
+        // Prepare the matching engine using the generated cards.
         List<int> keys = new List<int>();
 
         foreach (MemoryCard card in board.Cards)
@@ -287,20 +289,25 @@ public class GameManager : MonoBehaviour
 
         CurrentRound = new PairMatchRound(keys);
 
-        ObservationTimeRemaining = 0f;
-
         board.SetStartButtonVisible(false);
 
-        board.StartGame();
+        // Start the observation phase.
+        ObservationTimeRemaining =
+            IsObservationTimed
+                ? State.Rules.observationSeconds
+                : 0f;
 
-        SetPhase(GamePhase.Selecting);
+        SetPhase(GamePhase.Observe);
 
-        onSelectionPhaseStarted.Invoke();
+        onObservePhaseStarted.Invoke();
+
+        if (IsObservationTimed)
+            ObservationTick?.Invoke(ObservationTimeRemaining);
 
         Debug.Log(
-            $"GameLevel started: {Difficulty}, " +
+            $"StudyPhase started: {Difficulty}, " +
             $"Level {State.Level}, {pairs} pairs. " +
-            "Cards are hidden and ready for selection."
+            "Cards are visible for observation."
         );
     }
 
@@ -314,6 +321,8 @@ public class GameManager : MonoBehaviour
         SetPhase(GamePhase.Selecting);
 
         onSelectionPhaseStarted.Invoke();
+
+        Debug.Log("Observation ended. Matching started.");
     }
 
     // --------------------------------------------------
@@ -326,6 +335,9 @@ public class GameManager : MonoBehaviour
             return;
 
         int index = IndexOf(card);
+
+        if (index < 0)
+            return;
 
         PickResult result = CurrentRound.Pick(
             index,
@@ -396,22 +408,22 @@ public class GameManager : MonoBehaviour
         onLevelComplete.Invoke();
 
         pendingRoutine = StartCoroutine(
-            AfterDelay(levelCompleteDelay, ReturnToStudyPhase)
+            AfterDelay(levelCompleteDelay, StartNextLevel)
         );
     }
 
-    private void ReturnToStudyPhase()
+    private void StartNextLevel()
     {
         if (State == null || Phase == GamePhase.GameOver)
             return;
 
-        SharedCardPattern.SymbolIDs = null;
-
         Debug.Log(
-            $"Level completed. Preparing StudyPhase for Level {State.Level}."
+            $"Level completed. Preparing Level {State.Level} " +
+            "in the same StudyPhase scene."
         );
 
-        SceneLoader.Load(SceneNames.StudyPhase);
+        // Build a new board without loading another scene.
+        StartLevel();
     }
 
     // --------------------------------------------------

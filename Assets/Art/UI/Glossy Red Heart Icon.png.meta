@@ -1,0 +1,782 @@
+fileFormatVersion: 2
+guid: ab8b4107d407f42949cc93f09e204202
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6566188361401802539
+    second: Glossy Red Heart Icon_0
+  - first:
+      213: 5943313133928881541
+    second: Glossy Red Heart Icon_1
+  - first:
+      213: -2933516637782852016
+    second: Glossy Red Heart Icon_2
+  - first:
+      213: 1387462210793681717
+    second: Glossy Red Heart Icon_3
+  - first:
+      213: -4832418077064400323
+    second: Glossy Red Heart Icon_4
+  - first:
+      213: 7150777231766025947
+    second: Glossy Red Heart Icon_5
+  - first:
+      213: 230299349558811872
+    second: Glossy Red Heart Icon_6
+  - first:
+      213: 8804915835465309105
+    second: Glossy Red Heart Icon_7
+  - first:
+      213: 3206732124461069968
+    second: Glossy Red Heart Icon_8
+  - first:
+      213: -9047797955816558064
+    second: Glossy Red Heart Icon_9
+  - first:
+      213: 5439135568675152705
+    second: Glossy Red Heart Icon_10
+  - first:
+      213: -7955766114551480620
+    second: Glossy Red Heart Icon_11
+  - first:
+      213: 6534816148612566675
+    second: Glossy Red Heart Icon_12
+  - first:
+      213: 597744707218664025
+    second: Glossy Red Heart Icon_13
+  - first:
+      213: 4429598844627712645
+    second: Glossy Red Heart Icon_14
+  - first:
+      213: 8944836228775512746
+    second: Glossy Red Heart Icon_15
+  - first:
+      213: -9180033390088163460
+    second: Glossy Red Heart Icon_16
+  - first:
+      213: -3575681630453180228
+    second: Glossy Red Heart Icon_17
+  - first:
+      213: 6729734310062447702
+    second: Glossy Red Heart Icon_18
+  - first:
+      213: -3723325880940743053
+    second: Glossy Red Heart Icon_19
+  - first:
+      213: 782455783494602755
+    second: Glossy Red Heart Icon_20
+  - first:
+      213: -2089855672104879394
+    second: Glossy Red Heart Icon_21
+  - first:
+      213: 2832758596687546564
+    second: Glossy Red Heart Icon_22
+  - first:
+      213: -8595376643272241042
+    second: Glossy Red Heart Icon_23
+  - first:
+      213: -4933987591506257038
+    second: Glossy Red Heart Icon_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 475
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d06756797630e4a0800000000000000
+      internalID: -6566188361401802539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 1370
+        height: 718
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d9eb86ec3ea7250800000000000000
+      internalID: 5943313133928881541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_2
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 640
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e314e092e0a47d0800000000000000
+      internalID: -2933516637782852016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_3
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 697
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533b2a59781414310800000000000000
+      internalID: 1387462210793681717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 625
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d327666bc5dcfecb0800000000000000
+      internalID: -4832418077064400323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_5
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 643
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd67d5f710aac3360800000000000000
+      internalID: 7150777231766025947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_6
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 643
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecd47ac900323300800000000000000
+      internalID: 230299349558811872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_7
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 112
+        width: 239
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb1f1a4d48513a70800000000000000
+      internalID: 8804915835465309105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 568
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096f55090e9908c20800000000000000
+      internalID: 3206732124461069968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_9
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 433
+        width: 190
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0127c0c42b3cf6280800000000000000
+      internalID: -9047797955816558064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_10
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 506
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14323106bf0bb7b40800000000000000
+      internalID: 5439135568675152705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 429
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4deb11aced0779190800000000000000
+      internalID: -7955766114551480620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 424
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ec98a0aa450ba50800000000000000
+      internalID: 6534816148612566675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 351
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a632ce4ad9b4800800000000000000
+      internalID: 597744707218664025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_14
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 369
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58af38f1ea8197d30800000000000000
+      internalID: 4429598844627712645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_15
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 375
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa85368821722c70800000000000000
+      internalID: 8944836228775512746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_16
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 351
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fe1950548f99080800000000000000
+      internalID: -9180033390088163460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_17
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 329
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8d2fa7080a06ec0800000000000000
+      internalID: -3575681630453180228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_18
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 327
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cd70803b1d46d50800000000000000
+      internalID: 6729734310062447702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_19
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 264
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376328b96d6145cc0800000000000000
+      internalID: -3723325880940743053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_20
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 232
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30055a3b367dbda00800000000000000
+      internalID: 782455783494602755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_21
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 214
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda7a58b6575ff2e0800000000000000
+      internalID: -2089855672104879394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_22
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 207
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8cef16feaff4720800000000000000
+      internalID: 2832758596687546564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_23
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 178
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e609113bb7617b880800000000000000
+      internalID: -8595376643272241042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glossy Red Heart Icon_24
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 120
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b951a4d64f68bb0800000000000000
+      internalID: -4933987591506257038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glossy Red Heart Icon_0: -6566188361401802539
+      Glossy Red Heart Icon_1: 5943313133928881541
+      Glossy Red Heart Icon_10: 5439135568675152705
+      Glossy Red Heart Icon_11: -7955766114551480620
+      Glossy Red Heart Icon_12: 6534816148612566675
+      Glossy Red Heart Icon_13: 597744707218664025
+      Glossy Red Heart Icon_14: 4429598844627712645
+      Glossy Red Heart Icon_15: 8944836228775512746
+      Glossy Red Heart Icon_16: -9180033390088163460
+      Glossy Red Heart Icon_17: -3575681630453180228
+      Glossy Red Heart Icon_18: 6729734310062447702
+      Glossy Red Heart Icon_19: -3723325880940743053
+      Glossy Red Heart Icon_2: -2933516637782852016
+      Glossy Red Heart Icon_20: 782455783494602755
+      Glossy Red Heart Icon_21: -2089855672104879394
+      Glossy Red Heart Icon_22: 2832758596687546564
+      Glossy Red Heart Icon_23: -8595376643272241042
+      Glossy Red Heart Icon_24: -4933987591506257038
+      Glossy Red Heart Icon_3: 1387462210793681717
+      Glossy Red Heart Icon_4: -4832418077064400323
+      Glossy Red Heart Icon_5: 7150777231766025947
+      Glossy Red Heart Icon_6: 230299349558811872
+      Glossy Red Heart Icon_7: 8804915835465309105
+      Glossy Red Heart Icon_8: 3206732124461069968
+      Glossy Red Heart Icon_9: -9047797955816558064
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

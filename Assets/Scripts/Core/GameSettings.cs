@@ -2,8 +2,7 @@ using UnityEngine;
 
 public enum Difficulty
 {
-    Easy,
-    Hard
+    Easy, Hard
 }
 
 // Settings chosen on the menus that later scenes (Study Phase, Game Board) read.

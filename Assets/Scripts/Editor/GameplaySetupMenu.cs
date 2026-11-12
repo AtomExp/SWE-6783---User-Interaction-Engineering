@@ -69,19 +69,19 @@ public static class GameplaySetupMenu
     [MenuItem("Think N Sync/Add Gameplay To Open Scene")]
     public static void AddGameplayToOpenScene()
     {
-        var board = Object.FindFirstObjectByType<MemoryBoard>();
+        var board = Object.FindAnyObjectByType<MemoryBoard>();
         if (board == null)
         {
             EditorUtility.DisplayDialog("Add Gameplay", "Open the scene with the MemoryBoard (GameLevel) first.", "OK");
             return;
         }
-        if (Object.FindFirstObjectByType<GameManager>() != null)
+        if (Object.FindAnyObjectByType<GameManager>() != null)
         {
             EditorUtility.DisplayDialog("Add Gameplay", "This scene already has a GameManager.", "OK");
             return;
         }
 
-        var canvas = Object.FindFirstObjectByType<Canvas>();
+        var canvas = Object.FindAnyObjectByType<Canvas>();
         if (canvas == null)
         {
             EditorUtility.DisplayDialog("Add Gameplay", "No Canvas found in this scene.", "OK");
@@ -272,7 +272,7 @@ public static class GameplaySetupMenu
 
     static void EnsureEventSystem()
     {
-        if (Object.FindFirstObjectByType<EventSystem>() != null)
+        if (Object.FindAnyObjectByType<EventSystem>() != null)
             return;
         // The project uses the Input System package only, so the UI needs InputSystemUIInputModule.
         var go = new GameObject("EventSystem", typeof(EventSystem), typeof(InputSystemUIInputModule));

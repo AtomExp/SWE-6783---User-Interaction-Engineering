@@ -5,30 +5,27 @@ public class DifficultySelectionController : MonoBehaviour
 {
     public void GoBackToMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void SelectEasyMode()
     {
-        GameSettings.SelectedDifficulty = Difficulty.Easy;
-
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.PrepareNewGame(Difficulty.Easy);
-        }
-
-        SceneManager.LoadScene("StudyPhase");
+        SelectDifficulty(Difficulty.Easy);
     }
 
     public void SelectHardMode()
     {
-        GameSettings.SelectedDifficulty = Difficulty.Hard;
+        SelectDifficulty(Difficulty.Hard);
+    }
 
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.PrepareNewGame(Difficulty.Hard);
-        }
+    private void SelectDifficulty(Difficulty difficulty)
+    {
+        Time.timeScale = 1f;
 
+        GameSettings.SelectedDifficulty = difficulty;
+
+        // GameManager prepares the new session after StudyPhase loads.
         SceneManager.LoadScene("StudyPhase");
     }
 }

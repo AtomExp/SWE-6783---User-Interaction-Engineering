@@ -9,7 +9,7 @@ public class MemoryBoard : MonoBehaviour
     [SerializeField] private int columns = 5;
     [SerializeField] private int rows = 4;
 
-    [Tooltip("Build the board on Start. GameManager can disable this and build each level itself.")]
+    [Tooltip("GameManager controls board creation.")]
     [SerializeField] private bool buildOnStart = true;
 
     [Header("References")]
@@ -22,11 +22,13 @@ public class MemoryBoard : MonoBehaviour
     [SerializeField] private Sprite backSprite;
     [SerializeField] private Sprite[] symbols;
 
-    private List<MemoryCard> cards = new List<MemoryCard>();
+    private readonly List<MemoryCard> cards =
+        new List<MemoryCard>();
 
     public IReadOnlyList<MemoryCard> Cards => cards;
 
-    public int SymbolCount => symbols != null ? symbols.Length : 0;
+    public int SymbolCount =>
+        symbols != null ? symbols.Length : 0;
 
     public bool BuildOnStart
     {
@@ -34,7 +36,7 @@ public class MemoryBoard : MonoBehaviour
         set => buildOnStart = value;
     }
 
-    // Raised when the symbols are hidden.
+    // Raised when observation ends.
     public event Action Started;
 
     private void Start()
@@ -52,7 +54,9 @@ public class MemoryBoard : MonoBehaviour
 
         if (totalCards <= 0 || totalCards % 2 != 0)
         {
-            Debug.LogError("Board must have an even number of cards.");
+            Debug.LogError(
+                "MemoryBoard: Board must have an even number of cards.",
+                this);
             return;
         }
 
@@ -73,77 +77,64 @@ public class MemoryBoard : MonoBehaviour
 
         cards.Clear();
 
-        if (requiredPairs <= 0 ||
-            symbols == null ||
-            symbols.Length < requiredPairs)
+        // Validate pair count.
+        if (requiredPairs <= 0)
         {
-            Debug.LogError("Not enough symbols for this board!");
+            Debug.LogError(
+                "MemoryBoard: Required pairs must be greater than zero.",
+                this);
             return;
         }
 
-        if (cardPrefab == null || gridParent == null ||
-            frontSprite == null || backSprite == null)
+        // Validate symbols.
+        if (symbols == null || symbols.Length < requiredPairs)
         {
-            Debug.LogError("MemoryBoard: Assign all required references.");
+            Debug.LogError(
+                $"MemoryBoard: Needs {requiredPairs} symbols, " +
+                $"but only {SymbolCount} are assigned.",
+                this);
             return;
         }
 
-        int totalCards = requiredPairs * 2;
+        // Validate references.
+        if (cardPrefab == null ||
+            gridParent == null ||
+            frontSprite == null ||
+            backSprite == null)
+        {
+            Debug.LogError(
+                "MemoryBoard: Assign all required references.",
+                this);
+            return;
+        }
 
+        // Generate unique symbol IDs.
+        List<int> availableSymbols = new List<int>();
+
+        for (int i = 0; i < symbols.Length; i++)
+            availableSymbols.Add(i);
+
+        Shuffle(availableSymbols);
+
+        // Generate two copies of each selected symbol.
         List<int> symbolIDs = new List<int>();
 
-        // Check whether a study pattern is available.
-        if (SharedCardPattern.SymbolIDs != null &&
-            SharedCardPattern.SymbolIDs.Count == totalCards)
+        for (int i = 0; i < requiredPairs; i++)
         {
-            symbolIDs = new List<int>(SharedCardPattern.SymbolIDs);
+            int symbolID = availableSymbols[i];
 
-            // Validate the saved pattern.
-            foreach (int symbolID in symbolIDs)
-            {
-                if (symbolID < 0 || symbolID >= symbols.Length)
-                {
-                    Debug.LogError("Invalid symbol ID in shared card pattern.");
-                    SharedCardPattern.SymbolIDs = null;
-                    return;
-                }
-            }
-
-            Debug.Log(
-                "GameLevel: Reusing study pattern: " +
-                string.Join(", ", symbolIDs)
-            );
-
-            SharedCardPattern.SymbolIDs = null;
-        }
-        else
-        {
-            // Generate a random pattern if no study pattern exists.
-            Debug.LogWarning(
-                "GameLevel: No study pattern found. Generating a new pattern."
-            );
-
-            List<int> available = new List<int>();
-
-            for (int i = 0; i < symbols.Length; i++)
-                available.Add(i);
-
-            Shuffle(available);
-
-            // Add two copies of each selected symbol.
-            for (int i = 0; i < requiredPairs; i++)
-            {
-                symbolIDs.Add(available[i]);
-                symbolIDs.Add(available[i]);
-            }
-
-            Shuffle(symbolIDs);
+            symbolIDs.Add(symbolID);
+            symbolIDs.Add(symbolID);
         }
 
-        // Generate the cards.
+        // Shuffle card positions.
+        Shuffle(symbolIDs);
+
+        // Create cards.
         foreach (int symbolID in symbolIDs)
         {
-            MemoryCard newCard = Instantiate(cardPrefab, gridParent);
+            MemoryCard newCard =
+                Instantiate(cardPrefab, gridParent);
 
             newCard.Initialize(
                 symbolID,
@@ -155,26 +146,42 @@ public class MemoryBoard : MonoBehaviour
             cards.Add(newCard);
         }
 
-        FitGrid(totalCards);
+        // Configure the grid.
+        FitGrid(requiredPairs * 2);
 
+        // Show Ready button during observation.
         if (startButton != null)
             startButton.gameObject.SetActive(true);
+
+        Debug.Log(
+            $"MemoryBoard: Created {requiredPairs} pairs " +
+            $"({cards.Count} cards).",
+            this
+        );
     }
 
     private void FitGrid(int cardCount)
     {
-        GridLayoutGroup grid = gridParent != null
-            ? gridParent.GetComponent<GridLayoutGroup>()
-            : null;
+        GridLayoutGroup grid =
+            gridParent != null
+                ? gridParent.GetComponent<GridLayoutGroup>()
+                : null;
 
-        if (grid == null ||
-            grid.constraint != GridLayoutGroup.Constraint.FixedColumnCount)
+        if (grid == null)
             return;
 
-        int bestColumns = columns;
-        int start = Mathf.CeilToInt(Mathf.Sqrt(cardCount));
+        grid.constraint =
+            GridLayoutGroup.Constraint.FixedColumnCount;
 
-        for (int c = start; c <= columns; c++)
+        int bestColumns = Mathf.Min(
+            columns,
+            Mathf.CeilToInt(Mathf.Sqrt(cardCount))
+        );
+
+        bestColumns = Mathf.Max(1, bestColumns);
+
+        // Find a suitable column count.
+        for (int c = bestColumns; c <= columns; c++)
         {
             if (cardCount % c == 0)
             {
@@ -183,7 +190,7 @@ public class MemoryBoard : MonoBehaviour
             }
         }
 
-        grid.constraintCount = Mathf.Max(1, bestColumns);
+        grid.constraintCount = bestColumns;
     }
 
     public void SetStartButtonVisible(bool visible)
@@ -197,9 +204,11 @@ public class MemoryBoard : MonoBehaviour
         // Fisher-Yates shuffle.
         for (int i = list.Count - 1; i > 0; i--)
         {
-            int randomIndex = UnityEngine.Random.Range(0, i + 1);
+            int randomIndex =
+                UnityEngine.Random.Range(0, i + 1);
 
             int temp = list[i];
+
             list[i] = list[randomIndex];
             list[randomIndex] = temp;
         }
@@ -207,7 +216,15 @@ public class MemoryBoard : MonoBehaviour
 
     public void StartGame()
     {
-        // Hide all symbols.
+        if (cards.Count == 0)
+        {
+            Debug.LogWarning(
+                "MemoryBoard: Cannot start because no cards exist.",
+                this);
+            return;
+        }
+
+        // Hide all card symbols.
         foreach (MemoryCard card in cards)
         {
             if (card != null)

@@ -74,11 +74,18 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
 
     public void ShowBack()
     {
+        ShowBack(0f);
+    }
+
+    // `delay` staggers only the animation (e.g. the flip wave when matching
+    // begins); the card counts as face down straight away.
+    public void ShowBack(float delay)
+    {
         // Clear any mismatch tint once the card is turned back over.
         if (!IsMatched)
             cardImage.color = Color.white;
 
-        SetFace(false);
+        SetFace(false, delay);
     }
 
     // Keeps the card face up with a tint so found pairs stand out.
@@ -114,7 +121,7 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
     // ANIMATION
     // --------------------------------------------------
 
-    private void SetFace(bool faceUp)
+    private void SetFace(bool faceUp, float delay = 0f)
     {
         if (IsFaceUp == faceUp)
         {
@@ -140,11 +147,14 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        flipRoutine = StartCoroutine(Flip(faceUp));
+        flipRoutine = StartCoroutine(Flip(faceUp, delay));
     }
 
-    private IEnumerator Flip(bool faceUp)
+    private IEnumerator Flip(bool faceUp, float delay)
     {
+        if (delay > 0f)
+            yield return new WaitForSeconds(delay);
+
         float half = flipSeconds * 0.5f;
 
         // Squash to zero width (continuing from wherever an interrupted flip left off).

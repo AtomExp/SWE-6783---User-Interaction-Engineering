@@ -22,14 +22,19 @@ public class MemoryBoard : MonoBehaviour
              "If empty, the grid's GridLayoutGroup cell size is used instead.")]
     [SerializeField] private RectTransform fitArea;
 
-    [Tooltip("Inset from the fit area's edges, as a fraction of its size " +
-             "(keeps cards off the tray's wooden frame).")]
-    [SerializeField] private Vector2 fitAreaInset = new Vector2(0.08f, 0.1f);
+    [Tooltip("Gap kept between the fit area's edges and the cards, in canvas " +
+             "units (x = left/right, y = top/bottom). Covers the tray's frame.")]
+    [SerializeField] private Vector2 fitAreaPadding = new Vector2(85f, 90f);
 
     [SerializeField] private float cardSpacing = 6f;
     [SerializeField] private float minCardSize = 90f;
     [SerializeField] private float maxCardSize = 250f;
     [SerializeField] private int maxColumns = 8;
+
+    [Header("Memorize -> Match Transition")]
+    [Tooltip("Delay between each card turning over when matching begins, so " +
+             "the player sees every card flip in place.")]
+    [SerializeField] private float flipWaveStagger = 0.025f;
 
     [Header("Card Sprites")]
     [SerializeField] private Sprite frontSprite;
@@ -40,6 +45,16 @@ public class MemoryBoard : MonoBehaviour
         new List<MemoryCard>();
 
     private Vector2 lastFitSize;
+
+    // Column count chosen when the board was dealt. Kept for the whole level
+    // so resizing the window only scales the cards and never moves them to a
+    // different row/column (the memorized arrangement must not change).
+    private int layoutColumns;
+
+    // The arrangement is chosen in the LateUpdate after dealing, when the
+    // canvas and tray have their final size, and before the first frame the
+    // player sees. From then on it is fixed for the level.
+    private bool layoutLocked;
 
     public IReadOnlyList<MemoryCard> Cards => cards;
 
@@ -163,6 +178,9 @@ public class MemoryBoard : MonoBehaviour
         }
 
         // Size and place the cards.
+        layoutColumns = 0;
+        layoutLocked = false;
+
         if (fitArea != null)
             LayoutCardsToFit();
         else
@@ -181,13 +199,19 @@ public class MemoryBoard : MonoBehaviour
 
     private void LateUpdate()
     {
-        // Re-fit if the tray changes size (e.g. a stretch-anchored fit area
-        // while the window is resized).
-        if (fitArea != null && cards.Count > 0 &&
-            fitArea.rect.size != lastFitSize)
+        if (fitArea == null || cards.Count == 0)
+            return;
+
+        if (!layoutLocked)
         {
             LayoutCardsToFit();
+            layoutLocked = true;
+            return;
         }
+
+        // Window resized: rescale the cards, keeping the same rows/columns.
+        if (fitArea.rect.size != lastFitSize)
+            LayoutCardsToFit();
     }
 
     // Picks the column count that gives the largest square cards inside the
@@ -208,34 +232,35 @@ public class MemoryBoard : MonoBehaviour
             grid.enabled = false;
 
         Vector2 area = new Vector2(
-            lastFitSize.x * (1f - 2f * fitAreaInset.x),
-            lastFitSize.y * (1f - 2f * fitAreaInset.y));
+            Mathf.Max(1f, lastFitSize.x - 2f * fitAreaPadding.x),
+            Mathf.Max(1f, lastFitSize.y - 2f * fitAreaPadding.y));
 
-        int bestColumns = 1;
-        float bestSize = -1f;
-
-        for (int c = 1; c <= Mathf.Min(count, Mathf.Max(1, maxColumns)); c++)
+        // Choose the arrangement until it is locked; later re-fits keep it.
+        if (layoutColumns <= 0 || !layoutLocked)
         {
-            int r = Mathf.CeilToInt(count / (float)c);
+            layoutColumns = 1;
+            float bestSize = -1f;
 
-            float size = Mathf.Min(
-                (area.x - (c - 1) * cardSpacing) / c,
-                (area.y - (r - 1) * cardSpacing) / r);
-
-            // Prefer full rows when the size is (nearly) as good.
-            if (count % c != 0)
-                size *= 0.97f;
-
-            if (size > bestSize)
+            for (int c = 1; c <= Mathf.Min(count, Mathf.Max(1, maxColumns)); c++)
             {
-                bestSize = size;
-                bestColumns = c;
+                float size = CardSizeFor(c, count, area);
+
+                // Prefer full rows when the size is (nearly) as good.
+                if (count % c != 0)
+                    size *= 0.97f;
+
+                if (size > bestSize)
+                {
+                    bestSize = size;
+                    layoutColumns = c;
+                }
             }
         }
 
-        float cardSize = Mathf.Clamp(bestSize, minCardSize, maxCardSize);
-        int columns = bestColumns;
+        int columns = layoutColumns;
         int rowCount = Mathf.CeilToInt(count / (float)columns);
+        float cardSize = Mathf.Clamp(
+            CardSizeFor(columns, count, area), minCardSize, maxCardSize);
         float pitch = cardSize + cardSpacing;
 
         // Convert the fit area's center into the grid parent's space.
@@ -261,6 +286,15 @@ public class MemoryBoard : MonoBehaviour
                 (column - (inThisRow - 1) / 2f) * pitch,
                 ((rowCount - 1) / 2f - row) * pitch);
         }
+    }
+
+    private float CardSizeFor(int columnCount, int cardCount, Vector2 area)
+    {
+        int rowCount = Mathf.CeilToInt(cardCount / (float)columnCount);
+
+        return Mathf.Min(
+            (area.x - (columnCount - 1) * cardSpacing) / columnCount,
+            (area.y - (rowCount - 1) * cardSpacing) / rowCount);
     }
 
     private void FitGrid(int cardCount)
@@ -327,11 +361,13 @@ public class MemoryBoard : MonoBehaviour
             return;
         }
 
-        // Hide all card symbols.
-        foreach (MemoryCard card in cards)
+        // Turn every card over where it sits, in reading order, so it is
+        // clear the cards keep their places. Each card counts as face down
+        // immediately (input is safe); only the animation is staggered.
+        for (int i = 0; i < cards.Count; i++)
         {
-            if (card != null)
-                card.ShowBack();
+            if (cards[i] != null)
+                cards[i].ShowBack(i * flipWaveStagger);
         }
 
         SetStartButtonVisible(false);

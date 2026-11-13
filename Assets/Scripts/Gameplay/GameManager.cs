@@ -119,6 +119,13 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
+            // This copy came with a freshly loaded scene, so its Inspector
+            // event wiring (e.g. MatchAudioController sounds) points at that
+            // scene's objects. Hand it to the persistent instance; otherwise
+            // it keeps calling objects destroyed with the previous scene and
+            // sounds go silent after the first game.
+            Instance.AdoptSceneEvents(this);
+
             isDuplicate = true;
             Destroy(gameObject);
             return;
@@ -206,6 +213,17 @@ public class GameManager : MonoBehaviour
 
         // Build the first level after the scene has loaded.
         StartLevel();
+    }
+
+    private void AdoptSceneEvents(GameManager sceneCopy)
+    {
+        onObservePhaseStarted = sceneCopy.onObservePhaseStarted;
+        onSelectionPhaseStarted = sceneCopy.onSelectionPhaseStarted;
+        onCardFlipped = sceneCopy.onCardFlipped;
+        onMatch = sceneCopy.onMatch;
+        onMismatch = sceneCopy.onMismatch;
+        onLevelComplete = sceneCopy.onLevelComplete;
+        onGameOver = sceneCopy.onGameOver;
     }
 
     private void FindAndAssignBoard()

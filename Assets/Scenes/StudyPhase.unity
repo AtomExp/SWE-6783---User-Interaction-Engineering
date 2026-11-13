@@ -315,8 +315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -10}
-  m_SizeDelta: {x: 1300, y: 620}
+  m_AnchoredPosition: {x: -100, y: -15}
+  m_SizeDelta: {x: 1300, y: 660}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35920432
 MonoBehaviour:
@@ -1296,6 +1296,7 @@ RectTransform:
   - {fileID: 1286254065}
   - {fileID: 3133302}
   - {fileID: 1227550300}
+  - {fileID: 1900000002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3794,6 +3795,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 7768450828487523472, guid: 270ff7922d3a7d54caf0aa8eafb91166, type: 3}
   gridParent: {fileID: 1290503292}
   startButton: {fileID: 0}
+  fitArea: {fileID: 35920431}
   frontSprite: {fileID: 21300000, guid: 58a19e972fb63d544947277ca19b3686, type: 3}
   backSprite: {fileID: 21300000, guid: 141bff4689122f3468e73f6f201a9ba1, type: 3}
   symbols:
@@ -4809,6 +4811,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121021809}
   m_CullTransparentMesh: 1
+--- !u!1 &1900000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900000002}
+  - component: {fileID: 1900000003}
+  m_Layer: 5
+  m_Name: LevelProgressScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1900000002
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 447578794}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1900000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8b9090e4184271b5f6132c7d01125d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelProgressScreen
+  panelSprite: {fileID: 4092327487841802805, guid: 1152ed2ae8402344a8096898311f0356, type: 3}
+  titleSprite: {fileID: 21300000, guid: 3a1c7f18291db47cb9d5fb2f3fc90562, type: 3}
+  statsSprite: {fileID: 21300000, guid: 445fdec47841e4e5dbfae7ef026fd20c, type: 3}
+  starSprite: {fileID: 21300000, guid: 35a73e0b4b2b24c8eaf4258050286790, type: 3}
+  heartSprite: {fileID: 21300000, guid: ab8b4107d407f42949cc93f09e204202, type: 3}
+  continueSprite: {fileID: 2484601183152103202, guid: cdd86740653aa47269baf4520d91a2fe, type: 3}
+  font: {fileID: 11400000, guid: fc69211dc5c2b4e72ab1eddfbcf057dc, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

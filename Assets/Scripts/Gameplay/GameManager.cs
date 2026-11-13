@@ -15,6 +15,25 @@ public enum GamePhase
     GameOver
 }
 
+// Results of a cleared level, shown on the level progression screen.
+public struct LevelSummary
+{
+    public int CompletedLevel;
+    public int NextLevel;
+    public int NextLevelPairs;
+    public int PairsFound;
+    public int Mistakes;
+    public int LivesLeft;
+    public int MaxLives;
+    public int LevelBonus;
+    public int Score;
+    public Difficulty Difficulty;
+
+    // 3 = no mistakes, 2 = lost under half the lives, 1 = cleared.
+    public int Stars =>
+        Mistakes == 0 ? 3 : Mistakes * 2 < MaxLives ? 2 : 1;
+}
+
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
@@ -33,6 +52,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float minMismatchRevealSeconds = 0.3f;
 
     [SerializeField] private float levelCompleteDelay = 1.25f;
+
+    [Tooltip("Pause after the last match before the level progression " +
+             "screen appears (used when a progression screen is present).")]
+    [SerializeField] private float levelSummaryDelay = 0.6f;
+
     [SerializeField] private float gameOverDelay = 1f;
 
     [Tooltip("Delay between each hidden card being revealed after the last life is lost.")]
@@ -61,6 +85,8 @@ public class GameManager : MonoBehaviour
     private MemoryCard mismatchSecond;
     private float mismatchShownAt;
 
+    private int mistakesAtLevelStart;
+
     public static GameManager Instance { get; private set; }
 
     public GameState State { get; private set; }
@@ -79,6 +105,11 @@ public class GameManager : MonoBehaviour
     public event Action<float> ObservationTick;
     public event Action<PickResult> PairChecked;
     public event Action<ScoreRecord, bool> GameEnded;
+    public event Action<LevelSummary> LevelCompleted;
+
+    // Set by a level progression screen while it is in the scene. When true,
+    // the next level waits for ContinueToNextLevel() instead of auto-starting.
+    public bool WaitForLevelContinue { get; set; }
 
     // --------------------------------------------------
     // INITIALIZATION
@@ -351,6 +382,8 @@ public class GameManager : MonoBehaviour
 
         CurrentRound = new PairMatchRound(keys);
 
+        mistakesAtLevelStart = State.TotalMistakes;
+
         board.SetStartButtonVisible(false);
 
         ObservationTimeRemaining =
@@ -495,15 +528,59 @@ public class GameManager : MonoBehaviour
 
     private void CompleteLevel()
     {
-        State.CompleteLevel();
+        int completedLevel = State.Level;
+        int livesLeft = State.Lives;
+        int mistakes = State.TotalMistakes - mistakesAtLevelStart;
+        int pairsFound = CurrentRound != null ? CurrentRound.PairsFound : 0;
+
+        int bonus = State.CompleteLevel();
+
+        LevelSummary summary = new LevelSummary
+        {
+            CompletedLevel = completedLevel,
+            NextLevel = State.Level,
+            NextLevelPairs = board != null
+                ? Mathf.Min(State.PairsThisLevel, board.SymbolCount)
+                : State.PairsThisLevel,
+            PairsFound = pairsFound,
+            Mistakes = mistakes,
+            LivesLeft = livesLeft,
+            MaxLives = Mathf.Max(1, State.Rules.startingLives),
+            LevelBonus = bonus,
+            Score = State.Score,
+            Difficulty = Difficulty
+        };
 
         SetPhase(GamePhase.LevelComplete);
 
         onLevelComplete.Invoke();
 
+        if (!WaitForLevelContinue)
+        {
+            // No progression screen in this scene: keep the old auto-advance.
+            pendingRoutine = StartCoroutine(
+                AfterDelay(levelCompleteDelay, () =>
+                {
+                    LevelCompleted?.Invoke(summary);
+                    StartNextLevel();
+                })
+            );
+            return;
+        }
+
         pendingRoutine = StartCoroutine(
-            AfterDelay(levelCompleteDelay, StartNextLevel)
+            AfterDelay(levelSummaryDelay, () => LevelCompleted?.Invoke(summary))
         );
+    }
+
+    // Called by the level progression screen's Continue button.
+    public void ContinueToNextLevel()
+    {
+        if (Phase != GamePhase.LevelComplete || State == null)
+            return;
+
+        StopPending();
+        StartNextLevel();
     }
 
     private void StartNextLevel()

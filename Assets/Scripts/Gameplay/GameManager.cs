@@ -26,8 +26,17 @@ public class GameManager : MonoBehaviour
 
     [Header("Timing")]
     [SerializeField] private float mismatchRevealSeconds = 0.8f;
+
+    [Tooltip("After a wrong pair, clicking another card flips the pair back " +
+             "early instead of waiting out mismatchRevealSeconds. Clicks " +
+             "sooner than this are ignored so the pair is always seen.")]
+    [SerializeField] private float minMismatchRevealSeconds = 0.3f;
+
     [SerializeField] private float levelCompleteDelay = 1.25f;
     [SerializeField] private float gameOverDelay = 1f;
+
+    [Tooltip("Delay between each hidden card being revealed after the last life is lost.")]
+    [SerializeField] private float gameOverRevealStagger = 0.05f;
 
     [Tooltip("Start a new game when StudyPhase is opened directly.")]
     [SerializeField] private bool startOnLoad = true;
@@ -46,6 +55,11 @@ public class GameManager : MonoBehaviour
 
     private Coroutine pendingRoutine;
     private bool isDuplicate;
+
+    // The wrong pair currently on show, waiting to be flipped back.
+    private MemoryCard mismatchFirst;
+    private MemoryCard mismatchSecond;
+    private float mismatchShownAt;
 
     public static GameManager Instance { get; private set; }
 
@@ -132,6 +146,9 @@ public class GameManager : MonoBehaviour
     {
         if (scene.name != SceneNames.StudyPhase)
         {
+            // Some buttons load scenes directly; make sure no delayed
+            // mismatch / game-over step runs against a destroyed board.
+            StopPending();
             UnsubscribeCards();
 
             if (board != null)
@@ -375,6 +392,15 @@ public class GameManager : MonoBehaviour
 
     private void HandleCardClicked(MemoryCard card)
     {
+        // Let the player keep going without waiting out the full mismatch
+        // reveal: the next click flips the wrong pair back and counts as a pick.
+        if (Phase == GamePhase.Checking &&
+            mismatchFirst != null &&
+            Time.time - mismatchShownAt >= minMismatchRevealSeconds)
+        {
+            ResolveMismatch();
+        }
+
         if (Phase != GamePhase.Selecting || CurrentRound == null)
             return;
 
@@ -419,24 +445,48 @@ public class GameManager : MonoBehaviour
 
         State.RegisterMistake();
 
+        card.ShowMismatch();
+        other.ShowMismatch();
+
         onMismatch.Invoke();
 
         PairChecked?.Invoke(result);
 
+        if (State.IsGameOver)
+        {
+            // Leave the losing pair face up and go straight into the
+            // game-over sequence (no flip-back-then-reveal flicker).
+            EndGame();
+            return;
+        }
+
+        mismatchFirst = other;
+        mismatchSecond = card;
+        mismatchShownAt = Time.time;
+
         SetPhase(GamePhase.Checking);
 
         pendingRoutine = StartCoroutine(
-            AfterDelay(mismatchRevealSeconds, () =>
-            {
-                card.ShowBack();
-                other.ShowBack();
-
-                if (State.IsGameOver)
-                    EndGame();
-                else
-                    SetPhase(GamePhase.Selecting);
-            })
+            AfterDelay(mismatchRevealSeconds, ResolveMismatch)
         );
+    }
+
+    // Turns the shown wrong pair back over and returns to selecting.
+    private void ResolveMismatch()
+    {
+        MemoryCard first = mismatchFirst;
+        MemoryCard second = mismatchSecond;
+
+        StopPending();
+
+        if (first != null)
+            first.ShowBack();
+
+        if (second != null)
+            second.ShowBack();
+
+        if (Phase == GamePhase.Checking)
+            SetPhase(GamePhase.Selecting);
     }
 
     // --------------------------------------------------
@@ -477,26 +527,51 @@ public class GameManager : MonoBehaviour
         if (Phase == GamePhase.GameOver)
             return;
 
-        foreach (MemoryCard card in board.Cards)
-        {
-            if (card != null && !card.IsMatched)
-                card.ShowFront();
-        }
+        StopPending();
 
         ScoreRecord record = State.ToRecord(DateTime.UtcNow);
 
         bool isNewBest = ScoreRepository.Save(record);
 
+        // Locks input immediately; the HUD keeps the board and hearts on
+        // screen until GameEnded fires and the summary panel appears.
         SetPhase(GamePhase.GameOver);
 
         pendingRoutine = StartCoroutine(
-            AfterDelay(gameOverDelay, () =>
-            {
-                onGameOver.Invoke();
-
-                GameEnded?.Invoke(record, isNewBest);
-            })
+            GameOverSequence(record, isNewBest)
         );
+    }
+
+    private IEnumerator GameOverSequence(ScoreRecord record, bool isNewBest)
+    {
+        // 1. Let the losing pair's shake play so the player sees what happened.
+        if (mismatchRevealSeconds > 0f)
+            yield return new WaitForSeconds(mismatchRevealSeconds);
+
+        // 2. Reveal the rest of the board one card at a time.
+        if (board != null)
+        {
+            foreach (MemoryCard card in board.Cards)
+            {
+                if (card == null || card.IsMatched || card.IsFaceUp)
+                    continue;
+
+                card.ShowFront();
+
+                if (gameOverRevealStagger > 0f)
+                    yield return new WaitForSeconds(gameOverRevealStagger);
+            }
+        }
+
+        // 3. Give the revealed board a moment before the summary covers it.
+        if (gameOverDelay > 0f)
+            yield return new WaitForSeconds(gameOverDelay);
+
+        pendingRoutine = null;
+
+        onGameOver.Invoke();
+
+        GameEnded?.Invoke(record, isNewBest);
     }
 
     // --------------------------------------------------
@@ -554,6 +629,9 @@ public class GameManager : MonoBehaviour
 
     private void StopPending()
     {
+        mismatchFirst = null;
+        mismatchSecond = null;
+
         if (pendingRoutine != null)
         {
             StopCoroutine(pendingRoutine);

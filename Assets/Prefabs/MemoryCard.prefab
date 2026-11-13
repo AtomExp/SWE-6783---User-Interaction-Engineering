@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MemoryCard
   cardImage: {fileID: 8696557822147278622}
   symbolImage: {fileID: 3874801405373405340}
+  matchedTint: {r: 0.7, g: 1, b: 0.7, a: 1}
 --- !u!1 &8259989729625555869
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +127,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 25}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4627925904832932262
 CanvasRenderer:

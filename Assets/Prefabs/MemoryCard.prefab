@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MemoryCard
   cardImage: {fileID: 8696557822147278622}
   symbolImage: {fileID: 3874801405373405340}
+  matchedTint: {r: 0.7, g: 1, b: 0.7, a: 1}
 --- !u!1 &8259989729625555869
 GameObject:
   m_ObjectHideFlags: 0

@@ -652,7 +652,6 @@ GameObject:
   - component: {fileID: 294595164}
   - component: {fileID: 294595166}
   - component: {fileID: 294595165}
-  - component: {fileID: 294595167}
   m_Layer: 5
   m_Name: QuitConfirmationPanel
   m_TagString: Untagged
@@ -720,19 +719,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294595163}
   m_CullTransparentMesh: 1
---- !u!114 &294595167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294595163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 862bc0b86997b44e9b698047eaca9924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuitConfirmationController
-  confirmationPanel: {fileID: 294595163}
 --- !u!1 &450130120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,7 +2791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 862bc0b86997b44e9b698047eaca9924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuitConfirmationController
-  confirmationPanel: {fileID: 0}
+  confirmationPanel: {fileID: 294595163}
 --- !u!1 &1710089915
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,12 @@ public class DifficultySelectionController : MonoBehaviour
 
         GameSettings.SelectedDifficulty = difficulty;
 
-        // GameManager prepares the new session after StudyPhase loads.
+        // Reset the existing persistent GameManager session.
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.PrepareNewGame(difficulty);
+        }
+
         SceneManager.LoadScene("StudyPhase");
     }
 }

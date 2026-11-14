@@ -30,20 +30,12 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
     // Raised when the card is clicked or tapped.
     public event Action<MemoryCard> Clicked;
 
-    private void Awake()
-    {
-        CacheBaseTransform();
-    }
-
     public void Initialize(
         int symbolID,
         Sprite symbol,
         Sprite front,
         Sprite back)
     {
-        CacheBaseTransform();
-        StopAnimations();
-
         SymbolID = symbolID;
         assignedSymbol = symbol;
         frontSprite = front;
@@ -59,9 +51,7 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
 
         cardImage.color = Color.white;
 
-        // Cards are dealt face up for the observation phase; no flip needed.
-        IsFaceUp = true;
-        ApplyFace(true);
+        ShowFront();
     }
 
     public void ShowFront()
@@ -87,7 +77,7 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
         cardImage.sprite = backSprite;
         symbolImage.enabled = false;
 
-        SetFace(false, delay);
+        IsFaceUp = false;
     }
 
     // Keeps matched cards visible with a green tint.
@@ -97,23 +87,6 @@ public class MemoryCard : MonoBehaviour, IPointerClickHandler
 
         IsMatched = true;
         cardImage.color = matchedTint;
-        ShowFront();
-    }
-
-    // Tints the card red and gives it a short wobble so a wrong pick (and the
-    // life it cost) is obvious. Uses rotation only, so it never fights the
-    // GridLayoutGroup that positions the cards.
-    public void ShowMismatch()
-    {
-        if (!IsMatched)
-            cardImage.color = mismatchTint;
-
-        if (shakeRoutine != null)
-            StopCoroutine(shakeRoutine);
-
-        shakeRoutine = isActiveAndEnabled && mismatchShakeSeconds > 0f
-            ? StartCoroutine(Shake())
-            : null;
     }
 
     // Brief red flash for an incorrect match.

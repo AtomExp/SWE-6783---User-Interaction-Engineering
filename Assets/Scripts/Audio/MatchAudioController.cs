@@ -1,4 +1,6 @@
+
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 public class MatchAudioController : MonoBehaviour
@@ -13,11 +15,15 @@ public class MatchAudioController : MonoBehaviour
     [Header("Game Over Sound")]
     [SerializeField] private AudioClip gameOverSound;
 
+    [Header("Music Audio Source")]
+    [SerializeField] private AudioSource musicSource;
+
     [Header("SFX Volume")]
     [Range(0f, 1f)]
     [SerializeField] private float volume = 0.5f;
 
     private AudioSource audioSource;
+    private Coroutine resumeCoroutine;
 
     private void Awake()
     {
@@ -50,9 +56,41 @@ public class MatchAudioController : MonoBehaviour
 
     private void PlaySound(AudioClip clip)
     {
-        if (clip != null)
+        if (clip == null)
+            return;
+
+        // Cancel previous resume timer
+        if (resumeCoroutine != null)
         {
-            audioSource.PlayOneShot(clip, volume);
+            StopCoroutine(resumeCoroutine);
+            resumeCoroutine = null;
         }
+
+        // Pause background music
+        if (musicSource != null && musicSource.isPlaying)
+        {
+            musicSource.Pause();
+        }
+
+        // Play sound effect
+        audioSource.PlayOneShot(clip, volume);
+
+        // Resume music after sound effects finish
+        resumeCoroutine = StartCoroutine(ResumeMusic());
+    }
+
+    private IEnumerator ResumeMusic()
+    {
+        while (audioSource.isPlaying)
+        {
+            yield return null;
+        }
+
+        if (musicSource != null)
+        {
+            musicSource.UnPause();
+        }
+
+        resumeCoroutine = null;
     }
 }

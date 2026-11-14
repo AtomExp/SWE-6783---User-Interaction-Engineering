@@ -23,3 +23,6 @@
 
 # OS files
 .DS_Store
+
+# Visual Studio per-user cache (changes on every open; binary, cannot be merged)
+.vs/

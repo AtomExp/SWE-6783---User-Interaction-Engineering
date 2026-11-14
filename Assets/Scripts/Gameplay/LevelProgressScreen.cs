@@ -16,6 +16,9 @@ using UnityEngine.UI;
 public class LevelProgressScreen : MonoBehaviour
 {
     [Header("Art")]
+    [Tooltip("Optional header art (e.g. the 'Level Complete! Well Done!' sign). " +
+             "When set it replaces the title ribbon and the stars sit inside it.")]
+    [SerializeField] private Sprite headerSprite;
     [SerializeField] private Sprite panelSprite;
     [SerializeField] private Sprite titleSprite;
     [SerializeField] private Sprite statsSprite;
@@ -135,8 +138,14 @@ public class LevelProgressScreen : MonoBehaviour
         if (routine != null)
             StopCoroutine(routine);
 
-        titleText.text = $"Level {summary.CompletedLevel} Complete!";
-        pairsValue.text = summary.PairsFound.ToString();
+        if (titleText != null)
+            titleText.text = $"Level {summary.CompletedLevel} Complete!";
+
+        // With the header sign (no level number on it) the first row names
+        // the level; otherwise the title does and the row shows pairs found.
+        pairsValue.text = headerSprite != null
+            ? summary.CompletedLevel.ToString()
+            : summary.PairsFound.ToString();
         mistakesValue.text = summary.Mistakes.ToString();
         bonusValue.text = $"+{summary.LevelBonus:N0}";
         scoreValue.text = summary.Score.ToString("N0");
@@ -295,45 +304,66 @@ public class LevelProgressScreen : MonoBehaviour
         Stretch(dimmer.rectTransform);
         dimmer.color = dimColor;
 
+        bool hasHeader = headerSprite != null;
+
         panel = CreateImage("Panel", contentRect, panelSprite,
-            new Vector2(0f, -10f), new Vector2(940f, 820f)).rectTransform;
+            new Vector2(0f, hasHeader ? -40f : -10f),
+            new Vector2(hasHeader ? 920f : 940f, hasHeader ? 860f : 820f)).rectTransform;
 
-        Image title = CreateImage("TitleRibbon", panel, titleSprite,
-            new Vector2(0f, 370f), new Vector2(700f, 140f), sliced: true);
-        titleText = CreateText("TitleText", title.rectTransform, "",
-            Vector2.zero, new Vector2(660f, 120f), 62f, titleColor,
-            TextAlignmentOptions.Center);
-        titleText.outlineWidth = 0.25f;
-        titleText.outlineColor = titleOutlineColor;
-
-        for (int i = 0; i < stars.Length; i++)
+        if (hasHeader)
         {
-            float y = i == 1 ? 245f : 225f; // middle star sits a little higher
-            stars[i] = CreateImage($"Star{i + 1}", panel, starSprite,
-                new Vector2((i - 1) * 150f, y), new Vector2(130f, 130f));
+            // Header sign across the top edge of the panel; the stars sit in
+            // the empty band under its "Well Done!" text.
+            CreateImage("HeaderSign", panel, headerSprite,
+                new Vector2(0f, 365f), new Vector2(600f, 337f));
+
+            for (int i = 0; i < stars.Length; i++)
+            {
+                float y = i == 1 ? 266f : 258f;
+                stars[i] = CreateImage($"Star{i + 1}", panel, starSprite,
+                    new Vector2((i - 1) * 84f, y), new Vector2(66f, 66f));
+            }
+        }
+        else
+        {
+            Image title = CreateImage("TitleRibbon", panel, titleSprite,
+                new Vector2(0f, 370f), new Vector2(700f, 140f), sliced: true);
+            titleText = CreateText("TitleText", title.rectTransform, "",
+                Vector2.zero, new Vector2(660f, 120f), 62f, titleColor,
+                TextAlignmentOptions.Center);
+            titleText.outlineWidth = 0.25f;
+            titleText.outlineColor = titleOutlineColor;
+
+            for (int i = 0; i < stars.Length; i++)
+            {
+                float y = i == 1 ? 245f : 225f; // middle star sits a little higher
+                stars[i] = CreateImage($"Star{i + 1}", panel, starSprite,
+                    new Vector2((i - 1) * 150f, y), new Vector2(130f, 130f));
+            }
         }
 
         Image stats = CreateImage("Stats", panel, statsSprite,
-            new Vector2(0f, 5f), new Vector2(680f, 300f), sliced: true);
+            new Vector2(0f, hasHeader ? 30f : 5f), new Vector2(680f, 300f), sliced: true);
 
-        pairsValue = CreateStatRow(stats.rectTransform, "Pairs found", 105f);
+        pairsValue = CreateStatRow(stats.rectTransform,
+            hasHeader ? "Level cleared" : "Pairs found", 105f);
         mistakesValue = CreateStatRow(stats.rectTransform, "Mistakes", 35f);
         bonusValue = CreateStatRow(stats.rectTransform, "Level bonus", -35f);
         scoreValue = CreateStatRow(stats.rectTransform, "Total score", -105f);
 
         RectTransform heartRow = CreateRect("Hearts", panel,
-            new Vector2(0f, -185f), new Vector2(420f, 70f));
+            new Vector2(0f, hasHeader ? -170f : -185f), new Vector2(420f, 70f));
 
         for (int i = 0; i < hearts.Length; i++)
             hearts[i] = CreateImage($"Heart{i + 1}", heartRow, heartSprite,
                 Vector2.zero, new Vector2(150f, 130f));
 
         nextText = CreateText("NextText", panel, "",
-            new Vector2(0f, -255f), new Vector2(760f, 60f), 42f, textColor,
+            new Vector2(0f, hasHeader ? -248f : -255f), new Vector2(760f, 60f), 42f, textColor,
             TextAlignmentOptions.Center);
 
         Image continueImage = CreateImage("ContinueButton", panel, continueSprite,
-            new Vector2(0f, -360f), new Vector2(460f, 120f));
+            new Vector2(0f, hasHeader ? -375f : -360f), new Vector2(460f, 120f));
         continueButton = continueImage.gameObject.AddComponent<Button>();
         continueButton.targetGraphic = continueImage;
         continueButton.onClick.AddListener(Continue);

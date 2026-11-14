@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\memorycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\assets\\scripts\\memorycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memorycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,19 +30,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OptionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\OptionsController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OptionsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\OptionsController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OptionsController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwBoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:11:56.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MemoryBoard.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\MemoryBoard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryBoard.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\MemoryBoard.cs",
               "RelativeToolTip": "Assets\\Scripts\\MemoryBoard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T11:47:48.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MemoryCard.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\MemoryCard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryCard.cs",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "Assets\\Scripts\\MemoryCard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T11:46:39.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T11:46:39.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ScrollingBackground.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Game\\SWE-6783---User-Interaction-Engineering\\Assets\\ScrollingBackground.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Game\\SWE-6783---User-Interaction-Engineering\\Assets\\ScrollingBackground.cs",

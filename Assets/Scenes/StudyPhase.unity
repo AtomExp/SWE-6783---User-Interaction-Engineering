@@ -496,6 +496,7 @@ MonoBehaviour:
   errorSound: {fileID: 8300000, guid: 69e018bb0ce3340a78f437ee4f321759, type: 3}
   levelCompleteSound: {fileID: 8300000, guid: ddef51838d64148709c06c8b993bc331, type: 3}
   gameOverSound: {fileID: 8300000, guid: 07f2659733fdb475c8cf305db21a81f8, type: 3}
+  musicSource: {fileID: 822355994}
   volume: 0.5
 --- !u!82 &107996138
 AudioSource:

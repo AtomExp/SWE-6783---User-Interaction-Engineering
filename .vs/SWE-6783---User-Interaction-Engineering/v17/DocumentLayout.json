@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\audio\\matchaudiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\matchaudiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\gameplay\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\gameplay\\gameoverpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\gameoverpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\assets\\scripts\\gameplay\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\memoryboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\assets\\scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\optionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\swe-6783---user-interaction-engineering\\assets\\scripts\\volumesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\assets\\scripts\\volumesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{835623E3-E02A-7B93-8FBB-DBD2E26625FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\volumesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,24 +41,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MatchAudioController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Audio\\MatchAudioController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\MatchAudioController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Audio\\MatchAudioController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\MatchAudioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T03:14:59.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameOverPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Gameplay\\GameOverPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameOverPanel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Gameplay\\GameOverPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameOverPanel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T03:14:30.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Gameplay\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameManager.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\Gameplay\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameManager.cs",
-              "ViewState": "AgIAABwCAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-13T23:31:56.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "VolumeSetting.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\VolumeSetting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VolumeSetting.cs",
@@ -58,12 +92,11 @@
               "RelativeToolTip": "Assets\\Scripts\\VolumeSetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T23:22:17.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T23:22:17.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OptionsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\OptionsController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OptionsController.cs",
@@ -71,12 +104,11 @@
               "RelativeToolTip": "Assets\\Scripts\\OptionsController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwCkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T23:11:56.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T23:11:56.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MemoryBoard.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\MemoryBoard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryBoard.cs",
@@ -89,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MemoryCard.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\SWE-6783---User-Interaction-Engineering\\Assets\\Scripts\\MemoryCard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MemoryCard.cs",
@@ -101,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ScrollingBackground.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Game\\SWE-6783---User-Interaction-Engineering\\Assets\\ScrollingBackground.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Game\\SWE-6783---User-Interaction-Engineering\\Assets\\ScrollingBackground.cs",

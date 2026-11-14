@@ -48,6 +48,13 @@ public class GameManager : MonoBehaviour
     private bool isDuplicate;
     private bool initialGameStarted;
 
+    // The wrong pair currently on show, waiting to be flipped back.
+    private MemoryCard mismatchFirst;
+    private MemoryCard mismatchSecond;
+    private float mismatchShownAt;
+
+    private int mistakesAtLevelStart;
+
     public static GameManager Instance { get; private set; }
 
     public GameState State { get; private set; }
@@ -67,6 +74,11 @@ public class GameManager : MonoBehaviour
     public event Action<float> ObservationTick;
     public event Action<PickResult> PairChecked;
     public event Action<ScoreRecord, bool> GameEnded;
+    public event Action<LevelSummary> LevelCompleted;
+
+    // Set by a level progression screen while it is in the scene. When true,
+    // the next level waits for ContinueToNextLevel() instead of auto-starting.
+    public bool WaitForLevelContinue { get; set; }
 
     // --------------------------------------------------
     // INITIALIZATION AND SCENE PERSISTENCE
@@ -76,6 +88,13 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
+            // This copy came with a freshly loaded scene, so its Inspector
+            // event wiring (e.g. MatchAudioController sounds) points at that
+            // scene's objects. Hand it to the persistent instance; otherwise
+            // it keeps calling objects destroyed with the previous scene and
+            // sounds go silent after the first game.
+            Instance.AdoptSceneEvents(this);
+
             isDuplicate = true;
             Destroy(gameObject);
             return;
@@ -138,6 +157,17 @@ public class GameManager : MonoBehaviour
         {
             StartLevel();
         }
+    }
+
+    private void AdoptSceneEvents(GameManager sceneCopy)
+    {
+        onObservePhaseStarted = sceneCopy.onObservePhaseStarted;
+        onSelectionPhaseStarted = sceneCopy.onSelectionPhaseStarted;
+        onCardFlipped = sceneCopy.onCardFlipped;
+        onMatch = sceneCopy.onMatch;
+        onMismatch = sceneCopy.onMismatch;
+        onLevelComplete = sceneCopy.onLevelComplete;
+        onGameOver = sceneCopy.onGameOver;
     }
 
     private void FindAndAssignBoard()
@@ -297,6 +327,8 @@ public class GameManager : MonoBehaviour
 
         CurrentRound = new PairMatchRound(keys);
 
+        mistakesAtLevelStart = State.TotalMistakes;
+
         board.SetStartButtonVisible(false);
 
         // Start the observation phase.
@@ -339,6 +371,15 @@ public class GameManager : MonoBehaviour
 
     private void HandleCardClicked(MemoryCard card)
     {
+        // Let the player keep going without waiting out the full mismatch
+        // reveal: the next click flips the wrong pair back and counts as a pick.
+        if (Phase == GamePhase.Checking &&
+            mismatchFirst != null &&
+            Time.time - mismatchShownAt >= minMismatchRevealSeconds)
+        {
+            ResolveMismatch();
+        }
+
         if (Phase != GamePhase.Selecting || CurrentRound == null)
             return;
 
@@ -390,20 +431,41 @@ public class GameManager : MonoBehaviour
 
         PairChecked?.Invoke(result);
 
+        if (State.IsGameOver)
+        {
+            // Leave the losing pair face up and go straight into the
+            // game-over sequence (no flip-back-then-reveal flicker).
+            EndGame();
+            return;
+        }
+
+        mismatchFirst = other;
+        mismatchSecond = card;
+        mismatchShownAt = Time.time;
+
         SetPhase(GamePhase.Checking);
 
         pendingRoutine = StartCoroutine(
-            AfterDelay(mismatchRevealSeconds, () =>
-            {
-                card.ShowBack();
-                other.ShowBack();
-
-                if (State.IsGameOver)
-                    EndGame();
-                else
-                    SetPhase(GamePhase.Selecting);
-            })
+            AfterDelay(mismatchRevealSeconds, ResolveMismatch)
         );
+    }
+
+    // Turns the shown wrong pair back over and returns to selecting.
+    private void ResolveMismatch()
+    {
+        MemoryCard first = mismatchFirst;
+        MemoryCard second = mismatchSecond;
+
+        StopPending();
+
+        if (first != null)
+            first.ShowBack();
+
+        if (second != null)
+            second.ShowBack();
+
+        if (Phase == GamePhase.Checking)
+            SetPhase(GamePhase.Selecting);
     }
 
     // --------------------------------------------------
@@ -412,13 +474,44 @@ public class GameManager : MonoBehaviour
 
     private void CompleteLevel()
     {
-        State.CompleteLevel();
+        int completedLevel = State.Level;
+        int livesLeft = State.Lives;
+        int mistakes = State.TotalMistakes - mistakesAtLevelStart;
+        int pairsFound = CurrentRound != null ? CurrentRound.PairsFound : 0;
+
+        int bonus = State.CompleteLevel();
+
+        LevelSummary summary = new LevelSummary
+        {
+            CompletedLevel = completedLevel,
+            NextLevel = State.Level,
+            NextLevelPairs = board != null
+                ? Mathf.Min(State.PairsThisLevel, board.SymbolCount)
+                : State.PairsThisLevel,
+            PairsFound = pairsFound,
+            Mistakes = mistakes,
+            LivesLeft = livesLeft,
+            MaxLives = Mathf.Max(1, State.Rules.startingLives),
+            LevelBonus = bonus,
+            Score = State.Score,
+            Difficulty = Difficulty
+        };
 
         SetPhase(GamePhase.LevelComplete);
 
         // Play level-up audio and display the Level Complete panel.
         // The next level waits for the Continue button.
         onLevelComplete.Invoke();
+    }
+
+    // Called by the level progression screen's Continue button.
+    public void ContinueToNextLevel()
+    {
+        if (Phase != GamePhase.LevelComplete || State == null)
+            return;
+
+        StopPending();
+        StartNextLevel();
     }
 
     private void StartNextLevel()
@@ -453,16 +546,45 @@ public class GameManager : MonoBehaviour
 
         bool isNewBest = ScoreRepository.Save(record);
 
+        // Locks input immediately; the HUD keeps the board and hearts on
+        // screen until GameEnded fires and the summary panel appears.
         SetPhase(GamePhase.GameOver);
 
         pendingRoutine = StartCoroutine(
-            AfterDelay(gameOverDelay, () =>
-            {
-                onGameOver.Invoke();
-
-                GameEnded?.Invoke(record, isNewBest);
-            })
+            GameOverSequence(record, isNewBest)
         );
+    }
+
+    private IEnumerator GameOverSequence(ScoreRecord record, bool isNewBest)
+    {
+        // 1. Let the losing pair's shake play so the player sees what happened.
+        if (mismatchRevealSeconds > 0f)
+            yield return new WaitForSeconds(mismatchRevealSeconds);
+
+        // 2. Reveal the rest of the board one card at a time.
+        if (board != null)
+        {
+            foreach (MemoryCard card in board.Cards)
+            {
+                if (card == null || card.IsMatched || card.IsFaceUp)
+                    continue;
+
+                card.ShowFront();
+
+                if (gameOverRevealStagger > 0f)
+                    yield return new WaitForSeconds(gameOverRevealStagger);
+            }
+        }
+
+        // 3. Give the revealed board a moment before the summary covers it.
+        if (gameOverDelay > 0f)
+            yield return new WaitForSeconds(gameOverDelay);
+
+        pendingRoutine = null;
+
+        onGameOver.Invoke();
+
+        GameEnded?.Invoke(record, isNewBest);
     }
 
     // --------------------------------------------------
@@ -522,6 +644,9 @@ public class GameManager : MonoBehaviour
 
     private void StopPending()
     {
+        mismatchFirst = null;
+        mismatchSecond = null;
+
         if (pendingRoutine != null)
         {
             StopCoroutine(pendingRoutine);

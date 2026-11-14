@@ -1,4 +1,3 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,29 +50,11 @@ public class HUDController : MonoBehaviour
     [SerializeField] private string gameOverMessage =
         "Out of lives!";
 
-    [Header("Animation")]
-    [Tooltip("Seconds for a heart to pop out (life lost) or pop in (lives restored).")]
-    [SerializeField] private float heartPopSeconds = 0.35f;
-
-    [Tooltip("How quickly the remaining hearts slide to re-center.")]
-    [SerializeField] private float heartSlideSpeed = 12f;
-
-    [SerializeField] private float gameOverPanelFadeSeconds = 0.3f;
-
     private GameState boundState;
 
     private float heartCenterX;
     private float heartSpacing;
     private bool heartLayoutInitialized;
-
-    private float[] heartTargetX;
-    private Vector3[] heartBaseScales;
-    private Color[] heartBaseColors;
-    private Coroutine[] heartRoutines;
-    private int shownLives = -1;
-
-    private Vector3 gameOverPanelBaseScale = Vector3.one;
-    private Coroutine gameOverPanelRoutine;
 
     private void Start()
     {
@@ -103,14 +84,10 @@ public class HUDController : MonoBehaviour
 
         InitializeHeartLayout();
 
-        if (gameOverPanel != null)
-            gameOverPanelBaseScale = gameOverPanel.transform.localScale;
-
         manager.GameStarted += Bind;
         manager.PhaseChanged += HandlePhaseChanged;
         manager.ObservationTick += HandleTimerTick;
         manager.PairChecked += HandlePairChecked;
-        manager.GameEnded += HandleGameEnded;
 
         if (manager.State != null)
             Bind(manager.State);
@@ -129,52 +106,10 @@ public class HUDController : MonoBehaviour
         manager.PhaseChanged -= HandlePhaseChanged;
         manager.ObservationTick -= HandleTimerTick;
         manager.PairChecked -= HandlePairChecked;
-        manager.GameEnded -= HandleGameEnded;
-    }
-
-    private void Update()
-    {
-        // Slide visible hearts toward their centered slots.
-        if (!heartLayoutInitialized || lifeIcons == null)
-            return;
-
-        float t = 1f - Mathf.Exp(-heartSlideSpeed * Time.unscaledDeltaTime);
-
-        for (int i = 0; i < lifeIcons.Length; i++)
-        {
-            if (lifeIcons[i] == null || i >= shownLives)
-                continue;
-
-            RectTransform rect = lifeIcons[i].rectTransform;
-            Vector2 position = rect.anchoredPosition;
-
-            position.x = Mathf.Lerp(position.x, heartTargetX[i], t);
-            rect.anchoredPosition = position;
-        }
     }
 
     private void InitializeHeartLayout()
     {
-        if (lifeIcons != null)
-        {
-            int count = lifeIcons.Length;
-
-            heartTargetX = new float[count];
-            heartBaseScales = new Vector3[count];
-            heartBaseColors = new Color[count];
-            heartRoutines = new Coroutine[count];
-
-            for (int i = 0; i < count; i++)
-            {
-                if (lifeIcons[i] == null)
-                    continue;
-
-                heartTargetX[i] = lifeIcons[i].rectTransform.anchoredPosition.x;
-                heartBaseScales[i] = lifeIcons[i].rectTransform.localScale;
-                heartBaseColors[i] = lifeIcons[i].color;
-            }
-        }
-
         if (lifeIcons == null ||
             lifeIcons.Length < 2 ||
             lifeIcons[0] == null ||
@@ -231,7 +166,7 @@ public class HUDController : MonoBehaviour
         );
 
         UpdateScore(state.Score);
-        ApplyLives(state.Lives, animate: false);
+        UpdateLives(state.Lives);
         UpdateLevel(state.Level);
 
         SetText(
@@ -262,39 +197,22 @@ public class HUDController : MonoBehaviour
         SetText(levelText, $"Level {level}");
     }
 
-    // Raised by GameState whenever a life is lost or lives are restored.
     private void UpdateLives(int lives)
     {
-        ApplyLives(lives, animate: true);
-    }
-
-    // Shows `lives` hearts centered in the heart badge. When animating,
-    // lost hearts pop out, restored hearts pop in, and the rest slide
-    // smoothly to their new centered slots instead of jumping.
-    private void ApplyLives(int lives, bool animate)
-    {
         Debug.Log(
-            $"HUD LIVES | Received: {lives} | Animate: {animate} | " +
+            $"HUD LIVES | Received: {lives} | " +
             $"Icons assigned: " +
             $"{(lifeIcons == null ? 0 : lifeIcons.Length)}"
         );
 
-        if (lifeIcons == null || heartRoutines == null)
+        if (lifeIcons == null)
             return;
 
         lives = Mathf.Clamp(lives, 0, lifeIcons.Length);
 
-        int previousLives = shownLives;
-        shownLives = lives;
-
-        bool canAnimate =
-            animate && previousLives >= 0 && isActiveAndEnabled;
-
         for (int i = 0; i < lifeIcons.Length; i++)
         {
-            Image heart = lifeIcons[i];
-
-            if (heart == null)
+            if (lifeIcons[i] == null)
             {
                 Debug.LogWarning(
                     $"HUD: Life icon {i} is not assigned."
@@ -303,112 +221,21 @@ public class HUDController : MonoBehaviour
                 continue;
             }
 
-            bool visible = i < lives;
-            bool wasVisible = previousLives >= 0
-                ? i < previousLives
-                : heart.gameObject.activeSelf;
+            if (heartLayoutInitialized && i < lives)
+            {
+                RectTransform rect =
+                    lifeIcons[i].rectTransform;
 
-            if (heartLayoutInitialized && visible)
-                heartTargetX[i] = heartCenterX +
+                Vector2 position = rect.anchoredPosition;
+
+                position.x = heartCenterX +
                     (i - (lives - 1) / 2f) * heartSpacing;
 
-            if (!canAnimate)
-            {
-                StopHeartRoutine(i);
-                ResetHeart(i);
-                SnapHeartToTarget(i);
-                heart.gameObject.SetActive(visible);
-                continue;
+                rect.anchoredPosition = position;
             }
 
-            if (visible && !wasVisible)
-            {
-                StopHeartRoutine(i);
-                SnapHeartToTarget(i);
-                heart.gameObject.SetActive(true);
-                heartRoutines[i] = StartCoroutine(PopHeart(i, appearing: true));
-            }
-            else if (!visible && wasVisible)
-            {
-                StopHeartRoutine(i);
-                heartRoutines[i] = StartCoroutine(PopHeart(i, appearing: false));
-            }
+            lifeIcons[i].gameObject.SetActive(i < lives);
         }
-    }
-
-    private IEnumerator PopHeart(int index, bool appearing)
-    {
-        Image heart = lifeIcons[index];
-        RectTransform rect = heart.rectTransform;
-        Vector3 baseScale = heartBaseScales[index];
-        Color baseColor = heartBaseColors[index];
-
-        float elapsed = 0f;
-        float duration = Mathf.Max(0.01f, heartPopSeconds);
-
-        while (elapsed < duration)
-        {
-            float p = elapsed / duration;
-
-            // Out: quick swell then shrink away. In: grow with a small overshoot.
-            float scale = appearing
-                ? EaseOutBack(p)
-                : (p < 0.3f
-                    ? Mathf.Lerp(1f, 1.35f, p / 0.3f)
-                    : Mathf.Lerp(1.35f, 0f, (p - 0.3f) / 0.7f));
-
-            float alpha = appearing ? Mathf.Clamp01(p * 2f) : 1f - p * p;
-
-            rect.localScale = baseScale * scale;
-
-            Color color = baseColor;
-            color.a = baseColor.a * alpha;
-            heart.color = color;
-
-            elapsed += Time.unscaledDeltaTime;
-            yield return null;
-        }
-
-        ResetHeart(index);
-
-        if (!appearing)
-            heart.gameObject.SetActive(false);
-
-        heartRoutines[index] = null;
-    }
-
-    private void StopHeartRoutine(int index)
-    {
-        if (heartRoutines[index] == null)
-            return;
-
-        StopCoroutine(heartRoutines[index]);
-        heartRoutines[index] = null;
-    }
-
-    private void ResetHeart(int index)
-    {
-        lifeIcons[index].rectTransform.localScale = heartBaseScales[index];
-        lifeIcons[index].color = heartBaseColors[index];
-    }
-
-    private void SnapHeartToTarget(int index)
-    {
-        if (!heartLayoutInitialized)
-            return;
-
-        RectTransform rect = lifeIcons[index].rectTransform;
-        Vector2 position = rect.anchoredPosition;
-        position.x = heartTargetX[index];
-        rect.anchoredPosition = position;
-    }
-
-    private static float EaseOutBack(float p)
-    {
-        const float c1 = 1.70158f;
-        const float c3 = c1 + 1f;
-        float x = p - 1f;
-        return 1f + c3 * x * x * x + c1 * x * x;
     }
 
     private void HandlePhaseChanged(GamePhase phase)
@@ -445,13 +272,11 @@ public class HUDController : MonoBehaviour
         if (instructionBannerRoot != null)
             instructionBannerRoot.SetActive(observing);
 
-        // During GameOver the HUD stays up (hearts at zero, board revealing)
-        // until GameManager raises GameEnded; then the summary panel fades in.
         if (gameplayHudRoot != null)
-            gameplayHudRoot.SetActive(!observing);
+            gameplayHudRoot.SetActive(!observing && !gameOver);
 
-        if (!gameOver)
-            HideGameOverPanel();
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(gameOver);
 
         if (timerRoot != null)
             timerRoot.SetActive(timed);
@@ -481,83 +306,11 @@ public class HUDController : MonoBehaviour
 
             case GamePhase.GameOver:
                 SetText(messageText, gameOverMessage);
+                UpdateGameOverSummary();
                 break;
         }
 
         UpdatePairs();
-    }
-
-    private void HandleGameEnded(ScoreRecord record, bool isNewBest)
-    {
-        UpdateGameOverSummary();
-
-        if (gameplayHudRoot != null)
-            gameplayHudRoot.SetActive(false);
-
-        if (gameOverPanel == null)
-            return;
-
-        if (gameOverPanelRoutine != null)
-            StopCoroutine(gameOverPanelRoutine);
-
-        gameOverPanel.SetActive(true);
-        gameOverPanelRoutine = StartCoroutine(FadeInGameOverPanel());
-    }
-
-    private IEnumerator FadeInGameOverPanel()
-    {
-        CanvasGroup group = gameOverPanel.GetComponent<CanvasGroup>();
-
-        if (group == null)
-            group = gameOverPanel.AddComponent<CanvasGroup>();
-
-        Transform panel = gameOverPanel.transform;
-        float duration = Mathf.Max(0.01f, gameOverPanelFadeSeconds);
-        float elapsed = 0f;
-
-        // Block clicks on Replay/Home until the panel has settled.
-        group.interactable = false;
-
-        while (elapsed < duration)
-        {
-            float p = elapsed / duration;
-
-            group.alpha = p;
-            panel.localScale = gameOverPanelBaseScale *
-                Mathf.LerpUnclamped(0.85f, 1f, EaseOutBack(p));
-
-            elapsed += Time.unscaledDeltaTime;
-            yield return null;
-        }
-
-        group.alpha = 1f;
-        group.interactable = true;
-        panel.localScale = gameOverPanelBaseScale;
-
-        gameOverPanelRoutine = null;
-    }
-
-    private void HideGameOverPanel()
-    {
-        if (gameOverPanel == null)
-            return;
-
-        if (gameOverPanelRoutine != null)
-        {
-            StopCoroutine(gameOverPanelRoutine);
-            gameOverPanelRoutine = null;
-        }
-
-        CanvasGroup group = gameOverPanel.GetComponent<CanvasGroup>();
-
-        if (group != null)
-        {
-            group.alpha = 1f;
-            group.interactable = true;
-        }
-
-        gameOverPanel.transform.localScale = gameOverPanelBaseScale;
-        gameOverPanel.SetActive(false);
     }
 
     private void UpdateGameOverSummary()

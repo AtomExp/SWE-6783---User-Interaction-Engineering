@@ -50,9 +50,14 @@ public class MatchAudioController : MonoBehaviour
 
     private void PlaySound(AudioClip clip)
     {
-        if (clip != null)
-        {
-            audioSource.PlayOneShot(clip, volume);
-        }
+        if (clip == null)
+            return;
+
+        float settingsVolume = 1f;
+
+        if (MenuAudioManager.Instance != null)
+            settingsVolume = MenuAudioManager.Instance.GetSFXVolume();
+
+        audioSource.PlayOneShot(clip, volume * settingsVolume);
     }
 }

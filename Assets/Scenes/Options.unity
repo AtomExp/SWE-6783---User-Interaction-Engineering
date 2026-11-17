@@ -1726,6 +1726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1caa06dee02cb4bf4a4cbfa2f14385eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OptionsController
+  musicVolumeSlider: {fileID: 1289578881}
+  soundEffectsSlider: {fileID: 1634281070}
 --- !u!4 &2114846641
 Transform:
   m_ObjectHideFlags: 0
